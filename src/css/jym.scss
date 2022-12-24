@@ -1,0 +1,27 @@
+
+body {
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+    height: 100vh;
+
+    .sea-wave {
+        background: url(https://front-end-noobs.com/jecko/img/wave-mid.png) repeat 0 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        height: 167px;
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+        -webkit-animation: slide 50s linear infinite;
+    }
+
+    @-webkit-keyframes slide {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -1920px 0;
+        }
+    }
+}
