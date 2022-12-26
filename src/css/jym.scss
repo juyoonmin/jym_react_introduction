@@ -1,27 +1,109 @@
+#root {
+  font-family: 'Open Sans', 'Noto Sans KR', sans-serif ;
+  font-weight: 500;
+  // letter-spacing: -0.083em;
+}
 
-body {
-    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
-    height: 100vh;
+#hd {
 
-    .sea-wave {
-        background: url(https://front-end-noobs.com/jecko/img/wave-mid.png) repeat 0 0;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        height: 167px;
-        position: absolute;
-        bottom: 0;
-        box-sizing: border-box;
-        -webkit-animation: slide 50s linear infinite;
+  background-color: #171826;
+
+  .gnb_ul li {
+    padding-right: 1.5rem;
+    padding-left: 3.5rem;
+    
+  }
+
+  .mobileNavi {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    a {
+      color: black !important
     }
 
-    @-webkit-keyframes slide {
-        from {
-            background-position: 0 0;
-        }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 1rem;
 
-        to {
-            background-position: -1920px 0;
-        }
     }
+
+    &.on {
+      max-height: calc(100vh - 50px);
+
+    }
+
+  }
+}
+
+#Intro {
+  background-color: #171826;
+  height: 100vh;
+  .mainimg img {}
+
+  .waves {
+    width: 100%;
+    bottom: 0;
+    // height: 100%;
+    position: absolute;
+    z-index: 99;
+    // transform: translateY(20px);
+  }
+
+  svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .spacer {
+    height: 100px;
+    width: 100%;
+  }
+
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    50% {
+      left: -2000px;
+      top: 200px;
+    }
+
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+  .Intro_textbox{
+    transform: translateY(123px);
+    h3{
+      font-weight: 250;
+      font-size: 60px;
+      line-height: 129.5%;
+    }
+    h2{
+      font-size: 100px;
+      line-height: 148px;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      padding-top: 130px;
+    }
+
+  }
 }
