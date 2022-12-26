@@ -1,7 +1,8 @@
 #root {
-  font-family: 'Open Sans', 'Noto Sans KR', sans-serif ;
+  font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
   font-weight: 500;
   // letter-spacing: -0.083em;
+
 }
 
 #hd {
@@ -11,7 +12,7 @@
   .gnb_ul li {
     padding-right: 1.5rem;
     padding-left: 3.5rem;
-    
+
   }
 
   .mobileNavi {
@@ -47,6 +48,7 @@
 #Intro {
   background-color: #171826;
   height: 100vh;
+
   .mainimg img {}
 
   .waves {
@@ -57,6 +59,8 @@
     z-index: 99;
     // transform: translateY(20px);
   }
+
+
 
   svg {
     position: absolute;
@@ -90,14 +94,17 @@
       top: 0px;
     }
   }
-  .Intro_textbox{
+
+  .Intro_textbox {
     transform: translateY(123px);
-    h3{
+
+    h3 {
       font-weight: 250;
       font-size: 60px;
       line-height: 129.5%;
     }
-    h2{
+
+    h2 {
       font-size: 100px;
       line-height: 148px;
       letter-spacing: 0.1em;
@@ -106,4 +113,22 @@
     }
 
   }
+}
+
+#Common {
+  img{
+    z-index: 100;
+  }
+  h2 {
+    font-weight: 900;
+    font-size: 70px;
+    color: #101018;
+    padding-top: 20rem;
+    padding-left: 4rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+#About{
+  height: 100vh;
 }

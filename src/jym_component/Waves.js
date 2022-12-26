@@ -1,8 +1,10 @@
-
+import Common from './Common';
+// import About from './About';
 
 function Waves(props) {
-    return (
-        <div className="waves">
+  return (
+    <div>
+      <div className="waves">
         <svg width="100%" height="200px" fill="none" version="1.1"
           xmlns="http://www.w3.org/2000/svg">
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -73,7 +75,11 @@ function Waves(props) {
           </path>
         </svg>
       </div>
-    );
+      <Common />
+      {/* <About></About> */}
+    </div>
+
+  );
 }
 
 export default Waves;

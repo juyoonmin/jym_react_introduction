@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import Intro from "./jym_component/Intro";
 import Hd from "./jym_component/Hd"
-import Common from './jym_component/Common';
+import About from './jym_component/About';
+
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <GlobalStyles />
       <Hd />
       <Intro />
-      <Common />
+      <About />
     </div>
   );
 }
