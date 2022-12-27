@@ -1,5 +1,4 @@
-import Common from './Common';
-// import About from './About';
+
 
 function Waves(props) {
   return (
@@ -75,8 +74,8 @@ function Waves(props) {
           </path>
         </svg>
       </div>
-      <Common />
-      {/* <About></About> */}
+      
+     
     </div>
 
   );

@@ -1,9 +1,8 @@
-import styled, { keyframes } from 'styled-components';
-import Waves from './Waves';
+import Waves from './common/Waves'
 function Intro() {
   return (
     // <div class="sea-wave"></div>
-    <div id='Intro'>
+    <div id='Intro' className='maincolor'>
       <div className='mainimg d-flex justify-content-center'>
         <img className='img-fluid position-relative pt-5' src="./img/main/common/img_1.png" alt="" />
         <div className='Intro_textbox position-absolute d-flex flex-column text-white text-center'>
