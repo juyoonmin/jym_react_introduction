@@ -1,5 +1,3 @@
-
-
 function Waves(props) {
   return (
     <div>
