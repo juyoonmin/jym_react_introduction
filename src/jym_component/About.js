@@ -1,9 +1,10 @@
 import Common from "./common/Common";
-import SVG, { Props as SVGProps } from 'react-inlinesvg';
+import Percent from "./common/Percent";
+
 
 
 function About(props) {
-  
+
     return (
         <div>
             <Common />
@@ -29,15 +30,20 @@ function About(props) {
                     <div className="">
                         <h3 className="common_text">Skills</h3>
                     </div>
+                    <div className="d-flex justify-content-center">
+                        <Percent />
+                        <Percent />
+                        <Percent />
+                    </div>
                 </div>
-                <div>
-                    {/* <SVG src={skills} /> */}
-                </div>
+
             </section>
         </div>
 
     );
 }
+
+
 
 
 
