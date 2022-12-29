@@ -3,6 +3,8 @@ import Percent from "./common/Percent";
 
 
 
+
+
 function About(props) {
 
     return (
@@ -14,15 +16,20 @@ function About(props) {
                         <h3 className="common_text">Profile</h3>
                     </div>
                     <div className="profile_box bg-white rounded-4 d-flex justify-content-between align-items-center Mfc">
-                        <div className="profile_box_img p-4 order-md-2">
-                            <img className="" src="/img/main/about/about_main_img.png" alt="" />
+                        <div className="profile_box_img p-3 p-md-4 order-md-2">
+                            <img className="img-fluid" src="/img/main/about/about_main_img.png" alt="" />
                         </div>
-                        <div className="col-12 col-md-6 order-md-1 p-4">
-                            <div className="profile_name ">
-                                <h3 className="">주윤민</h3>
+                        <div className="col-12 col-md-6 order-md-1 p-3 p-md-4">
+                            <div className="profile_name">
+                                <h3 className="pb-3">주윤민</h3>
+                                <p className="pb-3">1994.01.09</p>
                             </div>
-                            <p>이력 / 자격증</p>
-                            <p>웹기능사</p>
+                            <div className="d-flex">
+                                <div className="">
+                                    <p className="py-3 fs-6 f700">이력 / 자격증</p>
+                                    <p className="f400">저쩌고<br />어쩌고<br />미주알</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -31,12 +38,11 @@ function About(props) {
                         <h3 className="common_text">Skills</h3>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <Percent />
-                        <Percent />
-                        <Percent />
+                        <Percent num="0" percent="80" skillimg="./img/main/about/ph.png" cls="water_box water_box_1" aosdelay="500"/>
+                        <Percent num="1" percent="50" skillimg="./img/main/about/pr.png" cls="water_box water_box_2" aosdelay="700"/>
+                        <Percent num="2" percent="30" skillimg="./img/main/about/ai.png" cls="water_box water_box_3" aosdelay="900"/>
                     </div>
                 </div>
-
             </section>
         </div>
 

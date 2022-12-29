@@ -1,4 +1,4 @@
-Percent 컴포넌트 생성
+skills 섹션 완료 완성(css수정필요)
 
 리액트 설치 플러그인
     "axios": "^1.2.1",
@@ -7,5 +7,6 @@ Percent 컴포넌트 생성
     "styled-components": "^5.3.6",
     "styled-reset": "^4.4.4",
     "swiper": "^8.4.5"
-    "react-scrollspy": "^3.4.3"
+    "react-scrollspy": "^3.4.3",
     "react-inlinesvg": "^3.0.1",
+    "aos": "^2.3.4"
