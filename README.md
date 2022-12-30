@@ -9,4 +9,5 @@ skills 섹션 완료 완성(css수정필요)
     "swiper": "^8.4.5"
     "react-scrollspy": "^3.4.3",
     "react-inlinesvg": "^3.0.1",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "node-sass": "^4.14.0",

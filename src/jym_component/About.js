@@ -38,9 +38,14 @@ function About(props) {
                         <h3 className="common_text">Skills</h3>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <Percent num="0" percent="80" skillimg="./img/main/about/ph.png" cls="water_box water_box_1" aosdelay="500"/>
-                        <Percent num="1" percent="50" skillimg="./img/main/about/pr.png" cls="water_box water_box_2" aosdelay="700"/>
-                        <Percent num="2" percent="30" skillimg="./img/main/about/ai.png" cls="water_box water_box_3" aosdelay="900"/>
+                        <Percent num="0" percent="80" skillimg="./img/main/about/ph.png" cls="water_box water_box_1" aosdelay="700"/>
+                        <Percent num="1" percent="50" skillimg="./img/main/about/pr.png" cls="water_box water_box_2" aosdelay="900"/>
+                        <Percent num="2" percent="30" skillimg="./img/main/about/ai.png" cls="water_box water_box_3" aosdelay="1100"/>
+                        <Percent num="3" percent="60" skillimg="./img/main/about/ph.png" cls="water_box water_box_4" aosdelay="1300"/>
+                        <Percent num="4" percent="70" skillimg="./img/main/about/ph.png" cls="water_box water_box_5" aosdelay="1400"/>
+                        <Percent num="5" percent="100" skillimg="./img/main/about/ph.png" cls="water_box water_box_6" aosdelay="1500"/>
+                        <Percent num="6" percent="40" skillimg="./img/main/about/ph.png" cls="water_box water_box_7" aosdelay="1600"/>
+
                     </div>
                 </div>
             </section>
