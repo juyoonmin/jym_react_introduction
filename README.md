@@ -1,4 +1,4 @@
-skills 섹션 완료 완성(css수정필요)
+container size 조정, sns아이콘 수정, skills 배치완료
 
 리액트 설치 플러그인
     "axios": "^1.2.1",

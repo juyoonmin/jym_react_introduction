@@ -1,5 +1,6 @@
 import Common from "./common/Common";
 import Percent from "./common/Percent";
+import Waves from "./common/Waves";
 
 
 
@@ -8,8 +9,8 @@ import Percent from "./common/Percent";
 function About(props) {
 
     return (
-        <div>
-            <Common />
+        <div className="section_1  position-relative">
+            <Common title="WHO?" />
             <section id="About" className="maincolor">
                 <div id="profile" className="container ">
                     <div className="pb-4">
@@ -37,18 +38,27 @@ function About(props) {
                     <div className="">
                         <h3 className="common_text">Skills</h3>
                     </div>
-                    <div className="d-flex justify-content-center">
-                        <Percent num="0" percent="80" skillimg="./img/main/about/ph.png" cls="water_box water_box_1" aosdelay="700"/>
-                        <Percent num="1" percent="50" skillimg="./img/main/about/pr.png" cls="water_box water_box_2" aosdelay="900"/>
-                        <Percent num="2" percent="30" skillimg="./img/main/about/ai.png" cls="water_box water_box_3" aosdelay="1100"/>
-                        <Percent num="3" percent="60" skillimg="./img/main/about/ph.png" cls="water_box water_box_4" aosdelay="1300"/>
-                        <Percent num="4" percent="70" skillimg="./img/main/about/ph.png" cls="water_box water_box_5" aosdelay="1400"/>
-                        <Percent num="5" percent="100" skillimg="./img/main/about/ph.png" cls="water_box water_box_6" aosdelay="1500"/>
-                        <Percent num="6" percent="40" skillimg="./img/main/about/ph.png" cls="water_box water_box_7" aosdelay="1600"/>
-
+                    <div className="d-flex flex-column align-items-center">
+                        <div className="skillslist_1 d-flex align-items-center">
+                            <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox col-6 align-items-center d-flex flex-column" aosdelay="500" />
+                            <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox col-6 align-items-center d-flex flex-column" aosdelay="700" />
+                        </div>
+                        <div className="skillslist_2 d-flex align-items-center">
+                            <Percent num="2" percent="70" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox col-4 align-items-center d-flex flex-column" aosdelay="900" />
+                            <Percent num="3" percent="90" skillimg="./img/main/about/html_css.png" cls="water_box water_box_4" cls_2="skillbox col-4 align-items-center d-flex flex-column" aosdelay="1100" />
+                            <Percent num="4" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox col-4 align-items-center d-flex flex-column" aosdelay="1300" />
+                        </div>
+                        <div className="skillslist_3 d-flex align-items-center">
+                            <Percent num="5" percent="50" skillimg="" cls="water_box water_box_6" cls_2="skillbox col-6 align-items-center d-flex flex-column" aosdelay="1400" />
+                            <Percent num="6" percent="50" skillimg="" cls="water_box water_box_7" cls_2="skillbox col-6 align-items-center d-flex flex-column" aosdelay="1500" />
+                        </div>
                     </div>
                 </div>
+                <Waves />
             </section>
+            <div className="position-relative">
+                <Common title="WORK" />
+            </div>
         </div>
 
     );
