@@ -1,4 +1,4 @@
-container size 조정, sns아이콘 수정, skills 배치완료
+node -v 14.21로 내림
 
 리액트 설치 플러그인
     "axios": "^1.2.1",

@@ -7,7 +7,10 @@
     z-index: 10;
     transform: translateY(-60px);
   }
-
+  .section_2{
+    z-index: 10;
+    transform: translateY(-291px);
+  }
   @media (min-width: 1400px) {
 
     .container,
@@ -31,6 +34,11 @@
       max-width: 1000px;
     }
   }
+  @media (max-width:768px) {
+    .Mfc {
+      flex-direction: column;
+    }
+  }
 }
 
 .maincolor {
@@ -49,10 +57,6 @@
   font-weight: 700;
   font-size: 30px;
   color: white;
-}
-
-section {
-  // height: 100vh;
 }
 
 #hd {
@@ -92,6 +96,7 @@ section {
   }
 }
 
+//Intro
 #Intro {
   height: 110vh;
 
@@ -186,9 +191,6 @@ section {
 }
 
 #Common {
-  img {
-    z-index: 100;
-  }
 
   h2 {
     font-weight: 900;
@@ -200,6 +202,7 @@ section {
   }
 }
 
+// About
 #About {
 
 
@@ -223,9 +226,7 @@ section {
 
   .Skills {
     padding-top: 8rem;
-    .skillslist_2{
-      height: 190px;
-    }
+    
     .common_text {
       transform: translateY(2rem);
     }
@@ -320,6 +321,58 @@ section {
         }
       }
     }
+    @media (max-width:768px) {
+      .skillslist_1{
+        order: 2;
+      }
+      .skillslist_2{
+        order: 1;
+      }
+      .skillslist_3{
+        order: 3;
+      }
+      .water_box_1 {
+        height: 110px;
+        width: 110px;
+      }
+  
+      .water_box_2 {
+        height: 110px;
+        width: 110px;
+      }
+  
+      .water_box_3 {
+        height: 140px;
+        width: 140px;
+      }
+  
+      .water_box_4 {
+        height: 200px;
+        width: 200px;
+      }
+  
+      .water_box_5 {
+        height: 140px;
+        width: 140px;
+      }
+  
+      .water_box_6 {
+        height: 110px;
+        width: 110px;
+      }
+  
+      .water_box_7 {
+        height: 110px;
+        width: 110px;
+  
+      }
+    }
+    @media (min-width:768px) {
+      .skillslist_2{
+        height: 190px;
+      }
+
+    }
   }
 
 
@@ -345,8 +398,8 @@ section {
 
 }
 
-@media (max-width:768px) {
-  .Mfc {
-    flex-direction: column;
-  }
-}
+
+
+
+// Work
+

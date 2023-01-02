@@ -3,7 +3,7 @@ import reset from 'styled-reset';
 import Intro from "./jym_component/Intro";
 import Hd from "./jym_component/Hd"
 import About from './jym_component/About';
-
+import Work from './jym_component/Work';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Hd />
       <Intro />
       <About />
+      <Work />
     </div>
   );
 }
