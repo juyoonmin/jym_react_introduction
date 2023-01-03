@@ -1,0 +1,405 @@
+#root {
+  font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  // letter-spacing: -0.083em;
+
+  .section_1 {
+    z-index: 10;
+    transform: translateY(-60px);
+  }
+  .section_2{
+    z-index: 10;
+    transform: translateY(-291px);
+  }
+  @media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1000px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1000px;
+    }
+  }
+  @media (max-width:768px) {
+    .Mfc {
+      flex-direction: column;
+    }
+  }
+}
+
+.maincolor {
+  background-color: #101018;
+}
+
+.f400 {
+  font-weight: 400;
+}
+
+.f700 {
+  font-weight: 700;
+}
+
+.common_text {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+#hd {
+  .gnb_ul li {
+    padding-right: 1.5rem;
+    padding-left: 3.5rem;
+
+  }
+
+  .mobileNavi {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    a {
+      color: black !important
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 1rem;
+
+    }
+
+    &.on {
+      max-height: calc(100vh - 50px);
+
+    }
+
+  }
+}
+
+//Intro
+#Intro {
+  height: 110vh;
+
+  .water-fill {
+    animation: wave 0.7s infinite linear,
+      fill-up 10s infinite ease-out alternate;
+  }
+
+  .DIVE {
+    transform: translateY(310px);
+  }
+
+  @keyframes wave {
+    0% {
+      x: -400px;
+    }
+
+    100% {
+      x: 0;
+    }
+  }
+
+
+  @keyframes fill-up {
+    0% {
+      height: 0;
+      y: 130px;
+    }
+
+    100% {
+      height: 160px;
+      y: -30px;
+    }
+  }
+
+  .waves {
+    width: 100%;
+    bottom: 0;
+    // height: 100%;
+    position: absolute;
+    z-index: 5;
+    transform: translateY(120px);
+  }
+
+
+
+  svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    animation-name: exmaple;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .spacer {
+    height: 100px;
+    width: 100%;
+  }
+
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    50% {
+      left: -2000px;
+      top: 200px;
+    }
+
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  .Intro_textbox {
+    transform: translateY(123px);
+
+    h3 {
+      font-weight: 250;
+      font-size: 60px;
+      line-height: 129.5%;
+    }
+
+
+
+  }
+}
+
+#Common {
+
+  h2 {
+    font-weight: 900;
+    font-size: 70px;
+    color: #101018;
+    padding-top: 17rem;
+    padding-left: 4rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+// About
+#About {
+
+
+  #profile {
+    padding-top: 10rem;
+  }
+
+  .profile_name {
+
+    border-bottom: 1px solid #00000042;
+
+    h3 {
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .Skills {
+    padding-top: 8rem;
+    
+    .common_text {
+      transform: translateY(2rem);
+    }
+
+    .water_box_1 {
+      height: 140px;
+      width: 140px;
+    }
+
+    .water_box_2 {
+      height: 140px;
+      width: 140px;
+    }
+
+    .water_box_3 {
+      height: 190px;
+      width: 190px;
+    }
+
+    .water_box_4 {
+      height: 260px;
+      width: 260px;
+    }
+
+    .water_box_5 {
+      height: 190px;
+      width: 190px;
+    }
+
+    .water_box_6 {
+      height: 140px;
+      width: 140px;
+    }
+
+    .water_box_7 {
+      height: 140px;
+      width: 140px;
+
+    }
+
+    .water_box {
+      top: 50%;
+      left: 50%;
+      // transform: translate(-50%, -50%);
+      background: #0F1434;
+      border-radius: 100%;
+      overflow: hidden;
+
+      .percent {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        // display: -webkit-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 64px;
+      }
+
+      .water {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 100%);
+        background: #31396A;
+        transition: all .3s;
+
+        &_wave {
+          width: 200%;
+          position: absolute;
+          bottom: 100%;
+
+          &_back {
+            right: 0;
+            fill: #545D97;
+            animation: wave-back 1.4s infinite linear;
+          }
+
+          &_front {
+            left: 0;
+            fill: #31396A;
+            margin-bottom: -1px;
+            animation: wave-front .7s infinite linear;
+          }
+        }
+      }
+    }
+    @media (max-width:768px) {
+      .skillslist_1{
+        order: 2;
+      }
+      .skillslist_2{
+        order: 1;
+      }
+      .skillslist_3{
+        order: 3;
+      }
+      .water_box_1 {
+        height: 110px;
+        width: 110px;
+      }
+  
+      .water_box_2 {
+        height: 110px;
+        width: 110px;
+      }
+  
+      .water_box_3 {
+        height: 140px;
+        width: 140px;
+      }
+  
+      .water_box_4 {
+        height: 200px;
+        width: 200px;
+      }
+  
+      .water_box_5 {
+        height: 140px;
+        width: 140px;
+      }
+  
+      .water_box_6 {
+        height: 110px;
+        width: 110px;
+      }
+  
+      .water_box_7 {
+        height: 110px;
+        width: 110px;
+  
+      }
+    }
+    @media (min-width:768px) {
+      .skillslist_2{
+        height: 190px;
+      }
+
+    }
+  }
+
+
+
+  @keyframes wave-front {
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @keyframes wave-back {
+    100% {
+      transform: translate(50%, 0);
+    }
+  }
+
+  @media (max-width:768px) {
+    #profile {
+      padding-top: 5rem;
+    }
+  }
+
+
+}
+
+
+
+
+// Work
+
