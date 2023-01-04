@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Navi from './Navi';
-import Sns from './Sns';
+import Sns from './common/Sns';
 
 // 리액트의 생명주기 
 // React의 특성상 변화가 있을 때 DOM을 다시 탐색하고 변화가 있는 부분을 Render하여  

@@ -1,5 +1,6 @@
 # 자기소개페이지 리액트로 구현하기
 첫번째 리액트 작업
+node연동전 작업분은 MY_BRANCH에 위치
 # 리액트 설치 플러그인
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
@@ -12,5 +13,8 @@
     "aos": "^2.3.4",
     "node-sass": "^4.14.0",
     "http-proxy-middleware": "^2.0.6",
+    "swiper": "^8.4.5",
 # 2023-01-03
 * 폴더 재조정, node서버 연동, axios테스트 완료
+# 2023-01-04
+* swiper.json생성, WorkSwiper component 기본 작업 완료
