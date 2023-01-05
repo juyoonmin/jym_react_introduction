@@ -8,13 +8,21 @@ import "swiper/css/pagination";
 
 const Worksswiper = () => {
     const workinfo = swiperDBlink.swiperDB;
+    // var bullet =['1번','2번','3번','4번']
     return (
         <Swiper className='WorkSection container py-5 '
             modules={[Pagination,]}
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
-            pagination={{ clickable: true }}
+            pagination={{
+                clickable: true,
+                // renderBullet: function (index, className) {
+                //     return `<div class="${className} "><span>${bullet[index]}</span></div>`;
+                //     // <span>' + (bullet[index]) + '</span>
+                //     // ${workinfo.subimg[index]}
+                // }
+            }}
         >
             {
                 workinfo.map((item, i) => {
@@ -23,13 +31,14 @@ const Worksswiper = () => {
                             <div className="workslide d-flex Mfc">
                                 <div className='workimg col-12 col-md-6 d-flex flex-column'>
                                     <div className='mainimg'>
-                                        <img className='rounded-4 img-fluid' src={item.mainimg} alt="" />
+                                        <a href="#Intro"><img className='rounded-4 img-fluid' src={item.mainimg} alt="" /></a>
                                     </div>
-                                    <div className='subimg d-none d-md-flex pt-5'>
+                                    {/* <div className='subimg d-none d-md-flex pt-5'>
                                         <img className='rounded-4 img-fluid' src={item.subimg[0]} alt="" />
                                         <img className='rounded-4 mx-3 img-fluid' src={item.subimg[1]} alt="" />
                                         <img className='rounded-4 img-fluid' src={item.subimg[2]} alt="" />
-                                    </div>
+                                        <img className='rounded-4 mx-3 img-fluid' src={item.subimg[3]} alt="" />
+                                    </div> */}
                                 </div>
                                 <div className='workinfo col-12 col-md-6 d-flex flex-column text-white ps-md-5'>
                                     <div className='workinfobox_1'>
@@ -53,8 +62,8 @@ const Worksswiper = () => {
                                     </div>
                                     <div className='workinfobox_3 d-flex'>
                                         <a href={item.gitsrc} target="_blank"><img src={item.gitimg} alt="" /></a>
-                                        <a href={item.notionsrc}><i></i></a>
-                                        <a href={item.figmasrc}><i></i></a>
+                                        <a className='px-4' href={item.notionsrc} target="_blank"><img src={item.notionimg} alt="" /></a>
+                                        <a href={item.figmasrc} target="_blank"><img src={item.figmaimg} alt="" /></a>
                                     </div>
                                 </div>
                             </div>

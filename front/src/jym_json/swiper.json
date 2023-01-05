@@ -8,13 +8,12 @@
         "useskills" : "HTML 10% / CSS 60% / JS 30%",
         "participation" : "Plan 10% / Design 30% / Implement 60%",
         "notionsrc" : "",
-        "notionimg" : "",
+        "notionimg" : "./img/main/common/notion_2.png",
         "gitsrc" : "https://github.com/juyoonmin/jym_react_introduction",
         "gitimg" : "./img/main/common/git.png",
         "figmasrc" : "",
-        "figmaimg" : "",
-        "mainimg" : "./img/main/work/1.jpg",
-        "subimg" : ["./img/main/work/2.jpg","./img/main/work/3.jpg","./img/main/work/4.jpg"]
+        "figmaimg" : "./img/main/common/figma.png",
+        "mainimg" : "./img/main/work/5.png"
     },
     {
         "title" : "",
@@ -29,8 +28,7 @@
         "gitimg" : "",
         "figmasrc" : "",
         "figmaimg" : "",
-        "mainimg" : "",
-        "subimg" : ["","",""]
+        "mainimg" : ""
     },
     {
         "title" : "",
@@ -45,8 +43,7 @@
         "gitimg" : "",
         "figmasrc" : "",
         "figmaimg" : "",
-        "mainimg" : "",
-        "subimg" : ["","",""]
+        "mainimg" : ""
     },
     {
         "title" : "",
@@ -61,7 +58,6 @@
         "gitimg" : "",
         "figmasrc" : "",
         "figmaimg" : "",
-        "mainimg" : "",
-        "subimg" : ["","",""]
+        "mainimg" : ""
     }]
 }

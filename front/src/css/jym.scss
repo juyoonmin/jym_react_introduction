@@ -63,8 +63,9 @@
     .Mfc {
       flex-direction: column;
     }
+
     .section_2 {
-      
+
       .waves {
         transform: translateY(-140px);
       }
@@ -429,22 +430,26 @@
 // Work
 
 #Work {
-  height: 120vh;
+  height: 100vh;
+  padding-top: 10rem;
 
   .WorkSection {
 
     .workslide {
 
       .workinfo {
+
         .infotext {
           font-weight: 300;
           font-size: 18px;
           line-height: 27px;
         }
-        .explanation{
+
+        .explanation {
           color: #D9D9D9 !important;
           opacity: 0.7;
         }
+
         .workinfobox_1 {
 
           .maintitle {
@@ -454,16 +459,19 @@
 
           .subtitle {}
 
-          
+
         }
-        .workinfobox_2{
-          .productionperiod_text{
+
+        .workinfobox_2 {
+          .productionperiod_text {
             padding-right: 50px;
           }
-          .useskills_text{
+
+          .useskills_text {
             padding-right: 17px;
           }
-          .participation_text{
+
+          .participation_text {
             padding-right: 34px;
           }
         }
@@ -474,7 +482,7 @@
         .mainimg {
 
           img {
-            height: 440px;
+            height: 302px;
             width: 510px;
           }
         }
@@ -494,19 +502,44 @@
     transform: translateY(-190px);
   }
 
+  @media (min-width:768px) {
+    .WorkSection {
+      .swiper-pagination {
+        display: flex;
+        transform: translate(-4px, -32px);
+      }
+
+      .swiper-pagination-bullet {
+        background-image: url(../../public/img/main/work/2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 81.91px;
+        width: 70px;
+        border-radius: 1rem;
+      }
+
+    }
+  }
+
   @media (max-width:768px) {
+
+    padding-top: 5rem;
+
     .swiper {
       padding-right: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .5);
 
       .workinfo {
         padding-top: 52px;
-        .workinfobox_2{
+
+        .workinfobox_2 {
           padding-top: 1rem !important;
           padding-bottom: 1rem !important;
         }
       }
     }
+
+
 
   }
 }
