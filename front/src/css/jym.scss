@@ -7,10 +7,34 @@
     z-index: 10;
     transform: translateY(-60px);
   }
-  .section_2{
+
+  .section_2 {
     z-index: 10;
     transform: translateY(-291px);
+
+    .waves {
+      transform: translateY(-190px);
+    }
   }
+
+  .maincolor {
+    background-color: #101018;
+  }
+
+  .f400 {
+    font-weight: 400;
+  }
+
+  .f700 {
+    font-weight: 700;
+  }
+
+  .common_text {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+  }
+
   @media (min-width: 1400px) {
 
     .container,
@@ -34,30 +58,21 @@
       max-width: 1000px;
     }
   }
+
   @media (max-width:768px) {
     .Mfc {
       flex-direction: column;
     }
+    .section_2 {
+      
+      .waves {
+        transform: translateY(-140px);
+      }
+    }
   }
 }
 
-.maincolor {
-  background-color: #101018;
-}
 
-.f400 {
-  font-weight: 400;
-}
-
-.f700 {
-  font-weight: 700;
-}
-
-.common_text {
-  font-weight: 700;
-  font-size: 30px;
-  color: white;
-}
 
 #hd {
   .gnb_ul li {
@@ -226,7 +241,7 @@
 
   .Skills {
     padding-top: 8rem;
-    
+
     .common_text {
       transform: translateY(2rem);
     }
@@ -320,59 +335,65 @@
         }
       }
     }
+
     @media (max-width:768px) {
-      .Mh_0{
+      .Mh_0 {
         height: 0;
       }
-      .skillslist_1{
+
+      .skillslist_1 {
         order: 2;
         padding-top: 3rem;
         padding-bottom: 3rem;
       }
-      .skillslist_2{
+
+      .skillslist_2 {
         order: 1;
       }
-      .skillslist_3{
+
+      .skillslist_3 {
         order: 3;
       }
+
       .water_box_1 {
         height: 110px;
         width: 110px;
       }
-  
+
       .water_box_2 {
         height: 110px;
         width: 110px;
       }
-  
+
       .water_box_3 {
         height: 140px;
         width: 140px;
       }
-  
+
       .water_box_4 {
         height: 200px;
         width: 200px;
       }
-  
+
       .water_box_5 {
         height: 140px;
         width: 140px;
       }
-  
+
       .water_box_6 {
         height: 110px;
         width: 110px;
       }
-  
+
       .water_box_7 {
         height: 110px;
         width: 110px;
-  
+
       }
     }
+
     @media (min-width:768px) {
-      .skillslist_2{
+      .skillslist_2 {
         height: 190px;
       }
 
@@ -407,3 +428,85 @@
 
 // Work
 
+#Work {
+  height: 120vh;
+
+  .WorkSection {
+
+    .workslide {
+
+      .workinfo {
+        .infotext {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .explanation{
+          color: #D9D9D9 !important;
+          opacity: 0.7;
+        }
+        .workinfobox_1 {
+
+          .maintitle {
+            font-weight: 700;
+            font-size: 50px;
+          }
+
+          .subtitle {}
+
+          
+        }
+        .workinfobox_2{
+          .productionperiod_text{
+            padding-right: 50px;
+          }
+          .useskills_text{
+            padding-right: 17px;
+          }
+          .participation_text{
+            padding-right: 34px;
+          }
+        }
+      }
+
+      .workimg {
+
+        .mainimg {
+
+          img {
+            height: 440px;
+            width: 510px;
+          }
+        }
+
+        .subimg {
+
+          img {
+            height: 81.91px;
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  .waves {
+    transform: translateY(-190px);
+  }
+
+  @media (max-width:768px) {
+    .swiper {
+      padding-right: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .5);
+
+      .workinfo {
+        padding-top: 52px;
+        .workinfobox_2{
+          padding-top: 1rem !important;
+          padding-bottom: 1rem !important;
+        }
+      }
+    }
+
+  }
+}

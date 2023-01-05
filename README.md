@@ -1,4 +1,4 @@
 # jym_react_introduction
 * first_react 
-* 자기소개페이지 구현
-* node연동전 작업분은 MY_BRANCH에 위치
+* 작업내역은 ./front/README.md 에서 확인
+* node연동전 작업내역은 MY_BRANCH에 위치

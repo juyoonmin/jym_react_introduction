@@ -17,7 +17,7 @@ function Sns(){
     ]
     return(
         <div id="sns" >
-            <ul class="d-flex align-items-center">
+            <ul className="d-flex align-items-center">
                 {
                 snsDB.map(function(item, index){
                     return(

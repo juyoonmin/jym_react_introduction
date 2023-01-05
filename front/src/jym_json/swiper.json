@@ -1,51 +1,67 @@
 {
     "swiperDB" :
     [{
-        "title" : "",
-        "explanation" : "",
-        "productionperiod" :"",
-        "useskills" : ["","",""],
-        "participation" : "",
+        "title" : "Herman Miller",
+        "subtitle" :"react",
+        "explanation" : "Asmdak dlxpaksa as kask dkaskd m masmd kamsndaksnd ka nasko",
+        "productionperiod" :"2022.12.~ 2023.01",
+        "useskills" : "HTML 10% / CSS 60% / JS 30%",
+        "participation" : "Plan 10% / Design 30% / Implement 60%",
         "notionsrc" : "",
-        "gitsrc" : "",
+        "notionimg" : "",
+        "gitsrc" : "https://github.com/juyoonmin/jym_react_introduction",
+        "gitimg" : "./img/main/common/git.png",
         "figmasrc" : "",
-        "mainimg" : "",
-        "subimg" : ""
+        "figmaimg" : "",
+        "mainimg" : "./img/main/work/1.jpg",
+        "subimg" : ["./img/main/work/2.jpg","./img/main/work/3.jpg","./img/main/work/4.jpg"]
     },
     {
         "title" : "",
+        "subtitle" :"",
         "explanation" : "",
         "productionperiod" :"",
-        "useskills" : ["","",""],
+        "useskills" : "",
         "participation" : "",
         "notionsrc" : "",
+        "notionimg" : "",
         "gitsrc" : "",
+        "gitimg" : "",
         "figmasrc" : "",
+        "figmaimg" : "",
         "mainimg" : "",
-        "subimg" : ""
+        "subimg" : ["","",""]
     },
     {
         "title" : "",
+        "subtitle" :"",
         "explanation" : "",
         "productionperiod" :"",
-        "useskills" : ["","",""],
+        "useskills" : "",
         "participation" : "",
         "notionsrc" : "",
+        "notionimg" : "",
         "gitsrc" : "",
+        "gitimg" : "",
         "figmasrc" : "",
+        "figmaimg" : "",
         "mainimg" : "",
-        "subimg" : ""
+        "subimg" : ["","",""]
     },
     {
         "title" : "",
+        "subtitle" :"",
         "explanation" : "",
         "productionperiod" :"",
-        "useskills" : ["","",""],
+        "useskills" : "",
         "participation" : "",
         "notionsrc" : "",
+        "notionimg" : "",
         "gitsrc" : "",
+        "gitimg" : "",
         "figmasrc" : "",
+        "figmaimg" : "",
         "mainimg" : "",
-        "subimg" : ""
+        "subimg" : ["","",""]
     }]
 }
