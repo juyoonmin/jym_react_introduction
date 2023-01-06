@@ -27,3 +27,6 @@ node연동전 작업분은 MY_BRANCH에 위치
 # 2020-01-05
 * Worksswiper component내에 map 구조 완료, swiper.json 수정, swiper css처리중
 * swiper subimg들 pagination처리 완료
+
+# 2020-01-06
+* swiper.json 테스트완료
