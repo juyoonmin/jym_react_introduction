@@ -1,4 +1,3 @@
-import Waves from './common/Waves'
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 
 function Intro() {
@@ -11,7 +10,6 @@ function Intro() {
           <SVG src={dive} />
         </div>
       </div>
-      <Waves />
     </section>
   )
 }

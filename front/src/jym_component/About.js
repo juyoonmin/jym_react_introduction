@@ -1,6 +1,5 @@
 import Common from "./common/Common";
 import Percent from "./common/Percent";
-import Waves from "./common/Waves";
 
 
 
@@ -12,7 +11,7 @@ function About(props) {
     return (
         
         <div className="section_1  position-relative">
-            <Common title="WHO?" />
+            <Common  title="WHO?" />
             <section id="About" className="maincolor">
                 <div id="profile" className="container ">
                     <div className="pb-5">
@@ -66,7 +65,6 @@ function About(props) {
                         </div>
                     </div>
                 </div>
-                <Waves />
             </section>
         </div>
 

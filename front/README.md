@@ -24,9 +24,14 @@ node연동전 작업분은 MY_BRANCH에 위치
 # 2023-01-04
 * swiper.json생성, WorkSwiper component 기본 작업 완료
 
-# 2020-01-05
+# 2023-01-05
 * Worksswiper component내에 map 구조 완료, swiper.json 수정, swiper css처리중
 * swiper subimg들 pagination처리 완료
 
-# 2020-01-06
+# 2023-01-06
 * swiper.json 테스트완료
+
+# 2023-01-08
+* 전체 반응형 처리 완료
+* Waves component 섹션별 속도조절을 위해 props로 처리 완료
+* Common component text부분 aos처리 완료

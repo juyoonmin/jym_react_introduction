@@ -6,16 +6,47 @@
   .section_1 {
     z-index: 10;
     transform: translateY(-60px);
+
   }
 
   .section_2 {
     z-index: 10;
     transform: translateY(-291px);
 
-    .waves {
-      transform: translateY(-190px);
+    [data-aos][data-aos][data-aos-duration="3000"],
+    body[data-aos-duration="3000"] [data-aos] {
+      transition-duration: 5s;
     }
   }
+  .section_3{
+    z-index: 10;
+    transform: translateY(-650px);
+    [data-aos][data-aos][data-aos-duration="3000"],
+    body[data-aos-duration="3000"] [data-aos] {
+      transition-duration: 4s;
+    }
+  }
+
+  .waves {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .waves_1 {
+    bottom: 0;
+    transform: translateY(120px);
+  }
+
+  .waves_2 {
+    transform: translateY(-235px);
+  }
+
+  .waves_3 {
+    transform: translateY(-480px);
+  }
+
+
 
   .maincolor {
     background-color: #101018;
@@ -34,6 +65,7 @@
     font-size: 30px;
     color: white;
   }
+
 
   @media (min-width: 1400px) {
 
@@ -64,12 +96,8 @@
       flex-direction: column;
     }
 
-    .section_2 {
 
-      .waves {
-        transform: translateY(-140px);
-      }
-    }
+
   }
 }
 
@@ -116,6 +144,10 @@
 #Intro {
   height: 110vh;
 
+  .mainimg {
+    padding-top: 5rem;
+  }
+
   .water-fill {
     animation: wave 0.7s infinite linear,
       fill-up 10s infinite ease-out alternate;
@@ -148,14 +180,7 @@
     }
   }
 
-  .waves {
-    width: 100%;
-    bottom: 0;
-    // height: 100%;
-    position: absolute;
-    z-index: 5;
-    transform: translateY(120px);
-  }
+
 
 
 
@@ -201,18 +226,34 @@
       line-height: 129.5%;
     }
 
+  }
 
+  @media (max-width:600px) {
+    .Intro_textbox h3 {
+      font-size: 50px;
+    }
+  }
 
+  @media (max-width:550px) {
+    .Intro_textbox {
+      transform: translateY(80px);
+
+      h3 {
+        padding-bottom: 0 !important;
+      }
+
+    }
   }
 }
 
 #Common {
-
+  .common_text{
+    transform: translateY(17rem);
+  }
   h2 {
     font-weight: 900;
     font-size: 70px;
     color: #101018;
-    padding-top: 17rem;
     padding-left: 4rem;
     letter-spacing: 0.1em;
   }
@@ -242,6 +283,7 @@
 
   .Skills {
     padding-top: 8rem;
+    padding-bottom: 9rem;
 
     .common_text {
       transform: translateY(2rem);
@@ -430,10 +472,13 @@
 // Work
 
 #Work {
-  height: 100vh;
+  height: 120vh;
   padding-top: 10rem;
 
   .WorkSection {
+    .swiper-pagination {
+      width: 50%;
+    }
 
     .workslide {
 
@@ -498,9 +543,7 @@
     }
   }
 
-  .waves {
-    transform: translateY(-190px);
-  }
+
 
   @media (min-width:768px) {
     .WorkSection {
@@ -521,6 +564,31 @@
     }
   }
 
+  @media (max-width:991px) {
+    .workinfo {
+      .infotext {
+        font-size: 13px !important;
+      }
+
+      .workinfobox_1 {
+        .maintitle {
+          font-size: 38px !important;
+        }
+      }
+    }
+
+    .workinfobox_2 {
+
+      .productionperiod_text {
+        padding-right: 46px !important;
+      }
+
+      .useskills_text {
+        padding-right: 22px !important;
+      }
+    }
+  }
+
   @media (max-width:768px) {
 
     padding-top: 5rem;
@@ -529,8 +597,44 @@
       padding-right: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .5);
 
+      .swiper-pagination {
+        transform: translateY(-25rem);
+        width: 100%;
+
+        .swiper-pagination-bullet {
+          width: 13px;
+          height: 10px;
+          display: inline-block;
+          background: #fff;
+          opacity: .2;
+          margin: 0 5px;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+          -webkit-transition: opacity .5s, background-color .5s, width .5s;
+          -o-transition: opacity .5s, background-color .5s, width .5s;
+          transition: opacity .5s, background-color .5s, width .5s;
+          -webkit-transition-delay: .5s, .5s, 0s;
+          -o-transition-delay: .5s, .5s, 0s;
+          transition-delay: .5s, .5s, 0s;
+        }
+      }
+
+      .swiper-pagination-clickable .swiper-pagination-bullet {
+        cursor: pointer;
+      }
+
+      .swiper-pagination .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #ffffff;
+        width: 100px;
+        -webkit-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;
+      }
+
+
       .workinfo {
-        padding-top: 52px;
+        padding-top: 100px;
 
         .workinfobox_2 {
           padding-top: 1rem !important;
@@ -538,8 +642,6 @@
         }
       }
     }
-
-
-
   }
+
 }

@@ -1,8 +1,8 @@
 function Waves(props) {
   return (
-    <div>
-      <div className="waves">
-        <svg className="" width="100%" height="200px" fill="none" version="1.1"
+    
+      <div className={props.cls}>
+        <svg width="100%" height="200px" fill="none" version="1.1"
           xmlns="http://www.w3.org/2000/svg">
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="#00B4DB" />
@@ -25,7 +25,7 @@ function Waves(props) {
               repeatCount="indefinite"
               fill="white"
               attributeName="d"
-              dur="15s"
+              dur={props.dur}
               attributeType="XML"
               values="
                   M0 77 
@@ -74,7 +74,7 @@ function Waves(props) {
       </div>
       
      
-    </div>
+    
 
   );
 }

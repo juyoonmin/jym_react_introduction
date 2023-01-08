@@ -1,6 +1,5 @@
 import Common from "./common/Common";
 import Worksswiper from "./WorkSwiper";
-import Waves from "./common/Waves";
 
 function Work(props) {
     return (
@@ -12,7 +11,6 @@ function Work(props) {
                 </div>
             <Worksswiper />
             </section>
-            <Waves />
         </div>
     );
 }
