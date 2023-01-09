@@ -35,3 +35,8 @@ node연동전 작업분은 MY_BRANCH에 위치
 * 전체 반응형 처리 완료
 * Waves component 섹션별 속도조절을 위해 props로 처리 완료
 * Common component text부분 aos처리 완료
+
+# 2023-01-09
+* WITH ME mix-blend-mode 처리 완료
+* routes 기본셋팅 완료
+* Question 기본셋팅 완료 

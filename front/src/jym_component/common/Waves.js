@@ -71,6 +71,9 @@ function Waves(props) {
             </animate>
           </path>
         </svg>
+        <div className={props.cls_2}>
+            <h2> WITH ME</h2>
+        </div>
       </div>
       
      

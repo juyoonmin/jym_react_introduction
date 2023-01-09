@@ -6,7 +6,7 @@ import Intro from "./jym_component/Intro";
 import Hd from "./jym_component/Hd"
 import About from './jym_component/About';
 import Work from './jym_component/Work';
-import Interview_Contact from './jym_component/Interview_Contact';
+import Withme from './jym_component/Withme';
 
 
 import axios from 'axios';
@@ -15,28 +15,17 @@ import React,{useState,useEffect} from 'react';
 
 
 function App() {
-  const sendRequest = async() => {
-    const response = await axios.post('http://localhost:8080');
-    console.log(response);
-    console.log(response.data);
-  };
-
-  useEffect(()=>{
-    sendRequest();    
-  });
-
-  
   return (
     <div className="App">
       <GlobalStyles />
       <Hd />
       <Intro />      
-      <Waves dur="5s" cls="waves waves_1"/>
+      <Waves dur="5s" cls="waves waves_1" cls_2="d-none"/>
       <About />
-      <Waves dur="8s" cls="waves waves_2"/>      
+      <Waves dur="7s" cls="waves waves_2" cls_2="d-none"/>      
       <Work />
-      <Waves dur="11s" cls="waves waves_3"/>
-      <Interview_Contact />
+      <Waves dur="9s" cls="waves waves_3"cls_2="d-block textblend"/>
+      <Withme />
     </div>
   );
 }
