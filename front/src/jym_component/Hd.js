@@ -56,7 +56,7 @@ function Header(props){
                   fixed-top maincolor">
           <h1 className="mb-0">
             <a href="#top" className="d-block">
-              <img src="./img/seo/logo.png" className="img-fluid w-100" alt="logo" />
+              <img src="img/seo/logo.png" className="img-fluid w-100" alt="logo" />
             </a>
           </h1>
           <button className='btn d-md-none text-white ' id="allMenu" onClick={ e => {               

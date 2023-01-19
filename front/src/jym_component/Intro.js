@@ -1,4 +1,4 @@
-import SVG, { Props as SVGProps } from 'react-inlinesvg';
+import SVG from 'react-inlinesvg';
 
 function Intro() {
   return (

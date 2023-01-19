@@ -40,3 +40,7 @@ node연동전 작업분은 MY_BRANCH에 위치
 * WITH ME mix-blend-mode 처리 완료
 * routes 기본셋팅 완료
 * Question 기본셋팅 완료 
+
+# 2020-01-19
+* preinterview json 생성
+* interview useState,map 처리

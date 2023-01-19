@@ -694,17 +694,47 @@
     .interview_qna {
       color: #D9D9D9;
       background-color: #1c1c24;
-
-      dd {
-        font-weight: 500;
-        font-size: 20px;
+      overflow: hidden;
+      &.show{
+        .interview_A{
+          max-height: 250px;
+          padding: 1.5rem;
+        }
+        .interview_Q{
+          &::after{
+            content: "";
+            background-image: url(../../public/img/main/common/arrow.png);
+            background-repeat: no-repeat;
+            height: 13px;
+            width: 22px;
+            transform: rotate(180deg);
+          }
+        }
       }
 
-      dt {
+      .interview_Q {
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+        &::after{
+          content: "";
+          background-image: url(../../public/img/main/common/arrow.png);
+          background-repeat: no-repeat;
+          height: 13px;
+          width: 22px;
+          transition: 0.5s;
+        }
+      }
+
+      .interview_A {
         line-height: 27px;
         font-weight: 300;
         font-size: 1rem;
         opacity: 0.7;
+        max-height: 0;
+        transition: 0.5s;
+        padding: 0 1.5rem;
+        
       }
     }
   }

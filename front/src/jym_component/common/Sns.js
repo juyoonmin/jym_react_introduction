@@ -21,7 +21,7 @@ function Sns(){
                 {
                 snsDB.map(function(item, index){
                     return(
-                    <li className="{item.snstitle} px-2"><a href={item.snslink}><img src={item.snsimg} alt="" /></a></li>
+                    <li key={"sns" +index} className="{item.snstitle} px-2"><a href={item.snslink}><img src={item.snsimg} alt="" /></a></li>
                     )
                 })
                 }
