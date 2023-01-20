@@ -41,6 +41,9 @@ node연동전 작업분은 MY_BRANCH에 위치
 * routes 기본셋팅 완료
 * Question 기본셋팅 완료 
 
-# 2020-01-19
+# 2023-01-19
 * preinterview json 생성
 * interview useState,map 처리
+
+# 2023-01-20
+* form component 1차 작업완료

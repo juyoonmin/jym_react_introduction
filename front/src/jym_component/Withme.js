@@ -1,5 +1,6 @@
 import Common from "./common/Common";
 import Question from "./Question";
+import Form from "./Form";
 
 function Withme(props) {
     return (
@@ -7,6 +8,7 @@ function Withme(props) {
             <Common title="" />
             <div id="Withme" className="maincolor">
                 <Question />
+                <Form />
             </div>
         </div>
     );
