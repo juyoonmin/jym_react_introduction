@@ -6,7 +6,14 @@ function Question(props) {
     const interview = preinterviewdb.preinterviewDB;
     const [interviewup, setInterviewup] = useState(interview);
     const [select, setSelect] = useState([]);
+    const toggles = document.querySelectorAll(".interview_qna_dd");
 
+    toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("active")
+        });
+
+    });
     return (
         <div id="question" className="container">
             <div className="question_text">

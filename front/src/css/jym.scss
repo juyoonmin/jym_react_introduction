@@ -1,8 +1,9 @@
 #root {
   font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
   font-weight: 100;
+
   // letter-spacing: -0.083em;
-  .App{
+  .App {
     height: 100vh;
   }
 
@@ -775,10 +776,13 @@
 
     .language {
       .language_list {
-        .check {
-          .language_name {
+        width: 19%;
 
-          }
+        .check {
+          width: 100%;
+
+          .language_name {}
+
           .checked {
             &::before {
               content: "";
@@ -882,10 +886,11 @@
     color: #495057;
     text-transform: uppercase;
     background-color: #1C1C24;
-    width: 11.688rem;
+    // width: 11.688rem;
     height: 4.25rem;
     font-weight: 600;
     padding-right: 1.2rem;
+
     &::before {
       content: "";
       background-image: url(../../public/img/main/common/checked.svg);
@@ -902,6 +907,7 @@
     background-color: #47474D;
     color: #ffffff;
     display: flex;
+
     &::before {
       content: "";
       background-image: url(../../public/img/main/common/checked.svg);
@@ -928,6 +934,65 @@
       color: #101018;
 
     }
+  }
+
+  @media (max-width:768px) {
+    #contactfrom {
+      .language ul {
+        flex-wrap: wrap;
+
+        .language_list {
+          flex: 0 0 auto;
+          width: 31.33333333% !important;
+        }
+
+        .language_list_4 {
+          padding-top: 1rem;
+          transform: translateX(5.5rem);
+        }
+
+        .language_list_5 {
+          padding-top: 1rem;
+          transform: translateX(-5.5rem);
+        }
+      }
+
+      .emailul {
+        flex-direction: column;
+
+        .email_li {
+          width: 100%;
+        }
+
+        .selectDiv {
+          margin-top: 1rem;
+
+          p {
+            padding: 1.188rem !important;
+          }
+        }
+      }
+
+      label.check span {
+        // height: 3rem;
+      }
+    }
+  }
+
+  @media (max-width:520px) {
+    #contactfrom {
+      .language ul {
+        .language_list_4 {
+          transform: translateX(4.9rem);
+        }
+
+        .language_list_5 {
+          transform: translateX(-4.9rem);
+        }
+      }
+    }
+
+
   }
 
   // .line:focus-within {

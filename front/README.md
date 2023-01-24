@@ -47,3 +47,6 @@ node연동전 작업분은 MY_BRANCH에 위치
 
 # 2023-01-20
 * form component 1차 작업완료
+
+# 2023-01-24
+* form component 반응형 기본 완료

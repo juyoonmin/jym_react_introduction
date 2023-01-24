@@ -65,13 +65,13 @@ function Form(props) {
                                             <span className="language_name rounded-4 d-flex justify-content-center align-items-center">JAVASCRIPT</span>
                                         </label>
                                     </li>
-                                    <li className="language_list">
+                                    <li className="language_list language_list_4">
                                         <label className="check">
                                             <input type="checkbox" name="language[]" value="php" />
                                             <span className="language_name rounded-4 d-flex justify-content-center align-items-center">PHP</span>
                                         </label>
                                     </li>
-                                    <li className="language_list">
+                                    <li className="language_list language_list_5">
                                         <label className="check">
                                             <input type="checkbox" name="language[]" value="jquery" />
                                             <span className="language_name rounded-4 d-flex justify-content-center align-items-center">JQUERY</span>
@@ -88,7 +88,7 @@ function Form(props) {
                             </div>
                         </li>
                         <li className="py-3">
-                            <ul className="d-flex justify-content-between">
+                            <ul className="d-flex justify-content-between emailul">
                                 <li className="line email_li">
                                     <p className="m-3">
                                         <input type="text" name="email" className="" placeholder="Email Name" required />
