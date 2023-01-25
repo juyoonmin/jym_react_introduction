@@ -50,3 +50,8 @@ node연동전 작업분은 MY_BRANCH에 위치
 
 # 2023-01-24
 * form component 반응형 기본 완료
+
+# 2023-01-25
+* Percent component aos data-anchor 처리 완료
+* Percent component 스크롤 위치에 맞춰서 이벤트 실행식 구상중
+* form component selectUl 구현 완료

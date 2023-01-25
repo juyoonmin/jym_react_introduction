@@ -39,9 +39,9 @@ function About(props) {
                     <div className="">
                         <h3 className="common_text">Skills</h3>
                     </div>
-                    <div className="d-flex flex-column align-items-center">
+                    <div data-anchor-id="1" className="d-flex flex-column align-items-center">
                         <div className="skillslist_1 d-flex align-items-center">
-                            <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="800" />
+                            <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
                             <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />
                         </div>
                         <div className="skillslist_2 d-flex Mfc align-items-center">
@@ -49,10 +49,10 @@ function About(props) {
                                 <Percent num="3" percent="70" skillimg="./img/main/about/html_css.png" cls="water_box water_box_4" cls_2="skillbox skillbox_4  align-items-center d-flex flex-column " cls_3="img-fluid " aosdelay="500" />
                             </div>
                             <div className="d-none d-md-flex order-md-1 ">
-                                <Percent num="2" percent="85" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="600" />
+                                <Percent num="2" percent="85" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="1500" />
                             </div>
                             <div className="d-none d-md-flex order-md-3 ">
-                                <Percent num="4" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox skillbox_5  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="700" />
+                                <Percent num="4" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox skillbox_5  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="1100" />
                             </div>
                             <div className="d-md-none d-flex">
                                 <Percent num="7" percent="70" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="600" />
@@ -60,8 +60,8 @@ function About(props) {
                             </div>
                         </div>
                         <div className="skillslist_3 d-flex align-items-center">
-                            <Percent num="5" percent="50" skillimg="" cls="water_box water_box_6" cls_2="skillbox skillbox_6 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1000" />
-                            <Percent num="6" percent="50" skillimg="" cls="water_box water_box_7" cls_2="skillbox skillbox_7 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1100" />
+                            <Percent num="5" percent="50" skillimg="" cls="water_box water_box_6" cls_2="skillbox skillbox_6 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1300" />
+                            <Percent num="6" percent="50" skillimg="" cls="water_box water_box_7" cls_2="skillbox skillbox_7 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1200" />
                         </div>
                     </div>
                 </div>

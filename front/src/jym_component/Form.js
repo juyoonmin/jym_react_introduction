@@ -1,31 +1,36 @@
+import { useEffect } from "react";
 
 
 function Form(props) {
-    // document.querySelector('.selectBox').addEventListener('click', function (e) {
-    //     document.querySelector('.selectUl').classList.toggle('down');
-    //     document.querySelector('.selectCaret').classList.toggle('rotateCaret');
-    //   });
+    useEffect(() => {
+        document.querySelector('.selectBox').addEventListener('click', function (e) {
+            document.querySelector('.selectUl').classList.toggle('down');
+            // document.querySelector('.selectCaret').classList.toggle('rotateCaret');
+        });
+        document.querySelectorAll('.selectli').forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                document.querySelector('.selectUl').classList.remove('down');
+            })
+        })
 
-    // document.querySelectorAll('.selectli').forEach(function (item) {
-    //     item.addEventListener('click', function (e) {
-    //         document.querySelector('.selectUl').classList.remove('down');
-    //     })
-    // })
+        const selectList = document.querySelectorAll('.selectUl > li');
 
-    // const selectList = document.querySelectorAll('.selectUl > li');
+        selectList.forEach((value, index) => {
+            value.addEventListener('click', function (e) {
+                if (index == (selectList.length - 1)) {
+                    document.querySelector('.selectDiv').innerHTML = `<input type="text" class="p-3" id="" aria-describedby="selectedEmail" className="p-3" name="area" placeholder="@email.com" required />`
+                    // document.getElementsByName('ct_emailSelect')[0].value = document.querySelector('.selectDiv input').value;
+                } else {
+                    document.querySelector('.selectBox').innerHTML = e.target.textContent;
+                    // document.getElementsByName('ct_emailSelect')[0].value = this.textContent;
+                }
+            });
+        });
+    }, [])
 
-    // selectList.forEach((value, index) => {
-    //     value.addEventListener('click', function (e) {
-    //         if (index == (selectList.length - 1)) {
-    //             document.querySelector('.selectDiv').innerHTML = `<input type="text" className="p-3" id="" aria-describedby="selectedEmail" className="p-3" name="area" placeholder="@email.com" required />`
-    //             document.getElementsByName('ct_emailSelect')[0].value = document.querySelector('.selectDiv input').value;
-    //         } else {
-    //             document.querySelector('.selectBox').innerHTML = e.target.textContent;
-    //             document.getElementsByName('ct_emailSelect')[0].value = this.textContent;
-    //         }
-    //     });
-    // });
-    
+
+
+
 
 
     return (
@@ -97,11 +102,11 @@ function Form(props) {
                                 <li className="line email_li position-relative selectDiv d-flex">
                                     <p className="selectBox text-black d-flex justify-content-between align-items-center p-3"><label className="form-label">Address Select</label><i className="selectCaret bi bi-caret-down-fill d-flex align-items-center"></i></p>
                                     <ul className="selectUl position-absolute">
-                                        <li className="selectli pl-3 py-2">@naver.com</li>
-                                        <li className="selectli pl-3 py-2">@daum.net</li>
-                                        <li className="selectli pl-3 py-2">@hanmail.net</li>
-                                        <li className="selectli pl-3 py-2">@gmail.com</li>
-                                        <li className="selectli directInput py-2">직접 입력</li>
+                                        <li className="selectli ps-3 py-2">@naver.com</li>
+                                        <li className="selectli ps-3 py-2">@daum.net</li>
+                                        <li className="selectli ps-3 py-2">@hanmail.net</li>
+                                        <li className="selectli ps-3 py-2">@gmail.com</li>
+                                        <li className="selectli directInput ps-3 py-2">직접 입력</li>
                                     </ul>
                                 </li>
                             </ul>
