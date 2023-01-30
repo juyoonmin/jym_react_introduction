@@ -5,11 +5,12 @@ function Form(props) {
     useEffect(() => {
         document.querySelector('.selectBox').addEventListener('click', function (e) {
             document.querySelector('.selectUl').classList.toggle('down');
-            // document.querySelector('.selectCaret').classList.toggle('rotateCaret');
+            document.querySelector('.selectDiv').classList.toggle('rotatechecked');
         });
         document.querySelectorAll('.selectli').forEach(function (item) {
             item.addEventListener('click', function (e) {
                 document.querySelector('.selectUl').classList.remove('down');
+                document.querySelector('.selectDiv').classList.remove('rotatechecked');
             })
         })
 
@@ -99,8 +100,8 @@ function Form(props) {
                                         <input type="text" name="email" className="" placeholder="Email Name" required />
                                     </p>
                                 </li>
-                                <li className="line email_li position-relative selectDiv d-flex">
-                                    <p className="selectBox text-black d-flex justify-content-between align-items-center p-3"><label className="form-label">Address Select</label><i className="selectCaret bi bi-caret-down-fill d-flex align-items-center"></i></p>
+                                <li className="line email_li position-relative selectDiv d-flex align-items-center ">
+                                    <p className="selectBox text-black d-flex justify-content-between align-items-center p-3"><label className="form-label" >Address Select</label><i className="selectCaret bi bi-caret-down-fill d-flex align-items-center"></i></p>
                                     <ul className="selectUl position-absolute">
                                         <li className="selectli ps-3 py-2">@naver.com</li>
                                         <li className="selectli ps-3 py-2">@daum.net</li>

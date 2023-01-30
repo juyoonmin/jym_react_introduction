@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -6,24 +6,18 @@ import "aos/dist/aos.css";
 
 function Percent(props) {
     useEffect(() => {
-        const sharpSkills = document.querySelector('#skills');
-        const percentscroll = window.pageYOffset + sharpSkills.getBoundingClientRect().top;
-        console.log(percentscroll)
         var cnt = document.querySelectorAll(".count")[props.num];
         var water = document.querySelectorAll(".water")[props.num];
         var percent = cnt.innerText;
         var interval;
-        if (window.scrollY >= percentscroll) {
-            interval = setInterval(function () {
-                percent++;
-                cnt.innerHTML = percent;
-                water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-            }, 60);
-        }
-        if (percent == props.percent) {
-            clearInterval(interval);
-        }
-
+        interval = setInterval(function () {
+            percent++;
+            cnt.innerHTML = percent;
+            water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+            if (percent == props.percent) {
+                clearInterval(interval);
+            }
+        }, 60);
         AOS.init();
     })
     return (

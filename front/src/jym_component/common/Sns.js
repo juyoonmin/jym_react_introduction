@@ -4,11 +4,11 @@ function Sns(){
         snslink :'https://github.com/juyoonmin',
         snsimg: './img/main/common/git.png'
     },
-    // {
-    //     snstitle : 'notion',
-    //     snslink :'https://github.com/juyoonmin',
-    //     snsimg: './img/main/common/notion.png'
-    // },
+    {
+        snstitle : 'notion',
+        snslink :'https://github.com/juyoonmin',
+        snsimg: './img/main/common/notion.png'
+    },
     // {
     //     snstitle : 'facebook',
     //     snslink :'https://github.com/juyoonmin',
@@ -21,7 +21,7 @@ function Sns(){
                 {
                 snsDB.map(function(item, index){
                     return(
-                    <li key={"sns" +index} className="{item.snstitle} px-2"><a href={item.snslink}><img src={item.snsimg} alt="" /></a></li>
+                    <li key={"sns" +index} className="{item.snstitle} pe-3"><a href={item.snslink} target="_blank"><img src={item.snsimg} alt="" /></a></li>
                     )
                 })
                 }
