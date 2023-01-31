@@ -35,7 +35,7 @@ function Form(props) {
 
 
     return (
-        <div id="contactfrom" className="container">
+        <section id="contactfrom" className="container">
             <div className="contact_text">
                 <div className="pb-5">
                     <h3 className="common_text">Contact</h3>
@@ -129,7 +129,7 @@ function Form(props) {
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
     );
 }
 

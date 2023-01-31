@@ -55,3 +55,11 @@ node연동전 작업분은 MY_BRANCH에 위치
 * Percent component aos data-anchor 처리 완료
 * Percent component 스크롤 위치에 맞춰서 이벤트 실행식 구상중
 * form component selectUl 구현 완료
+
+# 2023-01-30
+* 상단네비 css작업중
+
+# 2023-01-31
+* Worksswiper component css 수정
+* 모바일사이즈 contaier padding 조정
+* 상단네비 작업중(scroll 위치에 따른 class추가 시도중)

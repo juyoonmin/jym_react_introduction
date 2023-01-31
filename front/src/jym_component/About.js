@@ -1,5 +1,6 @@
 import Common from "./common/Common";
 import Percent from "./common/Percent";
+import { useEffect, useRef, useState } from 'react';
 
 
 
@@ -7,12 +8,37 @@ import Percent from "./common/Percent";
 
 
 function About(props) {
+    const TargetRef = useRef(null);
+    const [navieffect, setnavieffect] = useState(false);
+
+
+    const HandleScroll = () => {
+        if (window.scrollY > TargetRef) {
+            document.querySelector('#hd .gnb_ul li').classList.add('navi_name');
+        } else {
+            document.querySelector('#hd .gnb_ul li').classList.remove('navi_name')
+        }
+        setnavieffect(false);
+    };
+
+
+    useEffect(() => {
+        const Timer = setInterval(() => {
+            window.addEventListener("scroll", HandleScroll);
+        }, 100);
+        return () => {
+            clearInterval(Timer);
+            window.removeEventListener("scroll", HandleScroll);
+        };
+    }, []);
+
+    
 
     return (
-        
+
         <div className="section_1  position-relative">
-            <Common  title="WHO?" />
-            <section id="About" className="maincolor">
+            <Common title="WHO?" />
+            <section ref={TargetRef} id="About" className="maincolor">
                 <div id="profile" className="container ">
                     <div className="pb-5">
                         <h3 className="common_text">Profile</h3>
@@ -39,12 +65,12 @@ function About(props) {
                     <div className="">
                         <h3 className="common_text">Skills</h3>
                     </div>
-                    <div data-anchor-id="1" className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center">
                         <div className="skillslist_1 d-flex align-items-center">
                             <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
                             <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />
                         </div>
-                        <div className="skillslist_2 d-flex Mfc align-items-center">
+                        <div className="skillslist_2 d-flex Mfc align-items-center" data-anchor-id="1">
                             <div className="order-md-2 ">
                                 <Percent num="3" percent="70" skillimg="./img/main/about/html_css.png" cls="water_box water_box_4" cls_2="skillbox skillbox_4  align-items-center d-flex flex-column " cls_3="img-fluid " aosdelay="500" />
                             </div>

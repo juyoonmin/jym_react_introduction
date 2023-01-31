@@ -125,6 +125,11 @@
   }
 
   @media (max-width:768px) {
+    .container {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
     .Mfc {
       flex-direction: column;
     }
@@ -141,10 +146,14 @@
 }
 
 #hd {
+  // transition: all 1s ease 0s;
+  &.scroll{
+    // top: -67px;
+  }
   .gnb_ul li {
     padding-right: 1.5rem;
     padding-left: 3.5rem;
-    
+
     .navi_name {
       opacity: 0.7;
       border-radius: 50px;
@@ -532,7 +541,7 @@
 
   @media (max-width:768px) {
     #profile {
-      padding-top: 5rem;
+      padding-top: 3rem;
     }
   }
 
@@ -549,6 +558,8 @@
   padding-top: 10rem;
 
   .WorkSection {
+    padding-bottom: 9rem;
+
     .swiper-pagination {
       width: 50%;
     }
@@ -600,7 +611,7 @@
         .mainimg {
 
           img {
-            height: 302px;
+            height: 440px;
             width: 510px;
           }
         }
@@ -638,6 +649,26 @@
   }
 
   @media (max-width:991px) {
+    .WorkSection {
+      .swiper-pagination {
+        transform: translate(-4px, -120px);
+    }
+      .workslide {
+        .workinfo {}
+
+        .workimg {
+
+          .mainimg {
+
+            img {
+              height: 344px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
     .workinfo {
       .infotext {
         font-size: 13px !important;
@@ -664,14 +695,34 @@
 
   @media (max-width:768px) {
 
-    padding-top: 5rem;
+    padding-top: 3rem;
+
+    .WorkSection {
+      padding-bottom: 2rem;
+
+      .workslide {
+        .workinfo {
+          // padding-bottom: 3rem;
+        }
+
+        .workimg {
+
+          .mainimg {
+
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
 
     .swiper {
-      padding-right: calc(var(--bs-gutter-x) * .5);
-      padding-left: calc(var(--bs-gutter-x) * .5);
 
       .swiper-pagination {
-        transform: translateY(-25rem);
+        transform: translateY(-26.5rem);
         width: 100%;
 
         .swiper-pagination-bullet {
@@ -707,7 +758,8 @@
 
 
       .workinfo {
-        padding-top: 100px;
+        padding-top: 60px;
+        transform: translateY(-1rem);
 
         .workinfobox_2 {
           padding-top: 1rem !important;
@@ -1015,12 +1067,12 @@
 
         .language_list_4 {
           padding-top: 1rem;
-          transform: translateX(5.5rem);
+          transform: translateX(5.1rem);
         }
 
         .language_list_5 {
           padding-top: 1rem;
-          transform: translateX(-5.5rem);
+          transform: translateX(-5.1rem);
         }
       }
 
@@ -1050,11 +1102,11 @@
     #contactfrom {
       .language ul {
         .language_list_4 {
-          transform: translateX(4.9rem);
+          transform: translateX(4.5rem);
         }
 
         .language_list_5 {
-          transform: translateX(-4.9rem);
+          transform: translateX(-4.5rem);
         }
       }
     }

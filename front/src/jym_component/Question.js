@@ -15,7 +15,7 @@ function Question(props) {
 
     });
     return (
-        <div id="question" className="container">
+        <section id="question" className="container">
             <div className="question_text">
                 <div className="pb-5">
                     <h3 className="common_text">Question</h3>
@@ -41,7 +41,7 @@ function Question(props) {
                     })
                 }
             </dl>
-        </div>
+        </section>
     );
 }
 

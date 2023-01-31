@@ -18,6 +18,7 @@ function Header(props){
     const [isMobile, setisMobile ] = useState(false);
     const [naviOpen, setnaviOpen ] = useState(false);
     
+    
     const resizeHandler =() =>{
       if( window.innerWidth <= 767 ){
         setisMobile(true); //isMobile 값은 true Navi컴포넌트 랜더링할께
@@ -36,6 +37,8 @@ function Header(props){
       }
       setnaviOpen(false);
     };
+
+    
     useEffect(() => {   
       resizeHandler(); // 모바일인지 아닌지 
       const timer = setInterval(() => {
@@ -49,6 +52,8 @@ function Header(props){
       };
     }, []); 
 
+    
+  
     return(
         <header ref={targetRef} id="hd" 
         className="App-header d-flex justify-content-between 

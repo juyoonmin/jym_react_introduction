@@ -10,7 +10,7 @@ const Worksswiper = () => {
     const workinfo = swiperDBlink.swiperDB;
     // var bullet =['1번','2번','3번','4번']
     return (
-        <Swiper className='WorkSection container py-5 '
+        <Swiper className='WorkSection container pt-5 '
             modules={[Pagination,]}
             slidesPerView={1}
             spaceBetween={30}
@@ -46,7 +46,7 @@ const Worksswiper = () => {
                                         <p className='subtitle infotext'>{item.subtitle}</p>
                                         <p className='explanation infotext py-4'>{item.explanation}</p>
                                     </div>
-                                    <div className='workinfobox_2 py-5'>
+                                    <div className='workinfobox_2 pt-5 pb-3'>
                                         <div className='productionperiod d-flex'>
                                             <p className='explanation infotext productionperiod_text'>기간</p>
                                             <p className='infotext'>{item.productionperiod}</p>
