@@ -40,14 +40,14 @@ function About(props) {
             <Common title="WHO?" />
             <section ref={TargetRef} id="About" className="maincolor">
                 <div id="profile" className="container ">
-                    <div className="pb-5">
+                    <div className="pb-4">
                         <h3 className="common_text">Profile</h3>
                     </div>
                     <div className="profile_box bg-white rounded-4 d-flex justify-content-between align-items-center Mfc">
                         <div className="profile_box_img p-3 p-md-4 order-md-2">
                             <img className="img-fluid" src="/img/main/about/about_main_img.png" alt="" />
                         </div>
-                        <div className="col-12 col-md-6 order-md-1 p-3 p-md-4">
+                        <div className="profile_text col-12 col-md-6 order-md-1 p-3 p-md-4">
                             <div className="profile_name">
                                 <h3 className="pb-3">주윤민</h3>
                                 <p className="pb-3">1994.01.09</p>

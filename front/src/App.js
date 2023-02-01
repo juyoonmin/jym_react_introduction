@@ -6,7 +6,7 @@ import Intro from "./jym_component/Intro";
 import Hd from "./jym_component/Hd"
 import About from './jym_component/About';
 import Work from './jym_component/Work';
-import Withme from './jym_component/Withme';
+import Concact from './jym_component/Concact';
 
 
 import axios from 'axios';
@@ -34,7 +34,7 @@ function App() {
       <Waves dur="7s" cls="waves waves_2" cls_2="d-none"/>      
       <Work />
       <Waves dur="9s" cls="waves waves_3"cls_2="d-block textblend"/>
-      <Withme />
+      <Concact />
     </div>
   );
 }

@@ -36,8 +36,11 @@ function Form(props) {
 
     return (
         <section id="contactfrom" className="container">
+            <div className="With_Me">
+                <h2>With Me</h2>
+            </div>
             <div className="contact_text">
-                <div className="pb-5">
+                <div className="pb-4">
                     <h3 className="common_text">Contact</h3>
                 </div>
             </div>

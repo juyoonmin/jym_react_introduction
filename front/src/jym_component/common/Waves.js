@@ -72,7 +72,7 @@ function Waves(props) {
           </path>
         </svg>
         <div className={props.cls_2}>
-            <h2> WITH ME</h2>
+            <h2 className="ps-5">INTERVIEW</h2>
         </div>
       </div>
       

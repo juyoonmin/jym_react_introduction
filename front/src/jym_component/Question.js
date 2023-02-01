@@ -17,7 +17,7 @@ function Question(props) {
     return (
         <section id="question" className="container">
             <div className="question_text">
-                <div className="pb-5">
+                <div className="pb-4">
                     <h3 className="common_text">Question</h3>
                 </div>
             </div>
@@ -30,7 +30,7 @@ function Question(props) {
                                     !select.includes(item)
                                         ? setSelect((select) => [...select, item])
                                         : setSelect(select.filter((button) => button !== item));
-                                }} className="p-4 interview_Q position-relative d-flex align-items-center justify-content-between ">
+                                }} className="interview_Q position-relative d-flex align-items-center justify-content-between ">
                                     <p>{item.question}</p>
                                 </dt>
                                 <dd className="typewriter interview_A">
