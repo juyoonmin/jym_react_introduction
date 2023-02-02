@@ -66,3 +66,7 @@ node연동전 작업분은 MY_BRANCH에 위치
 
 # 2023-02-01
 * 피그마보고 시안대로 수정
+
+# 2023-02-02
+* swiper 부분 ProgressBar 처리 완료
+* Footer 제작 완료

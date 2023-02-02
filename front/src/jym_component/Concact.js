@@ -1,6 +1,7 @@
 import Common from "./common/Common";
 import Question from "./Question";
 import Form from "./Form";
+import Footer from './Footer';
 
 function Concact(props) {
     return (
@@ -10,6 +11,7 @@ function Concact(props) {
                 <Question />
                 <Form />
             </div>
+            <Footer />
         </div>
     );
 }

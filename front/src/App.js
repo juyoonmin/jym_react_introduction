@@ -1,12 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
+
 import Waves from './jym_component/common/Waves';
 import Intro from "./jym_component/Intro";
 import Hd from "./jym_component/Hd"
 import About from './jym_component/About';
 import Work from './jym_component/Work';
 import Concact from './jym_component/Concact';
+
 
 
 import axios from 'axios';
