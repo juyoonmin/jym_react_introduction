@@ -77,7 +77,7 @@ const Worksswiper = () => {
                                         </div>
                                         <div className='participation d-flex align-items-center'>
                                             <p className='explanation infotext participation_text'>참여도</p>
-                                            <ProgressBar >
+                                            <ProgressBar  >
                                                 <ProgressBar variant="html" now={item.participation_percent[0]} key={1} label={item.participation[0]}/>
                                                 <ProgressBar variant="css" now={item.participation_percent[1]} key={2} label={item.participation[1]} />
                                                 <ProgressBar variant="javascript" now={item.participation_percent[2]} key={3} label={item.participation[2]} />

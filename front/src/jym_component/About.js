@@ -36,8 +36,8 @@ function About(props) {
 
     return (
 
-        <div className="section_1  position-relative">
-            <Common title="WHO?" />
+        <div className="section_1  position-relative" data-anchor-id="2">
+            <Common title="WHO?" anchor="[data-anchor-id='2']" />
             <section ref={TargetRef} id="About" className="maincolor">
                 <div id="profile" className="container ">
                     <div className="pb-4">

@@ -9,8 +9,8 @@ function Common(props) {
     return (
         <div id="Common" className="container d-flex ps-5">
             <img src="./img/main/common/aaa.png" alt="" />
-            <div className='common_text'>
-                <h2 data-anchor-id="2" data-aos="fade-up"
+            <div  className='common_text'>
+                <h2  data-aos="fade-up"
                     data-aos-duration="3000" data-aos-anchor={props.anchor} className="">{props.title}</h2>
             </div>
         </div>

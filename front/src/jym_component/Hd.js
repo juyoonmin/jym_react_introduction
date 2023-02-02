@@ -59,18 +59,17 @@ function Header(props) {
       className="App-header d-flex
                   align-items-center px-lg-5 py-3
                   fixed-top maincolor">
-      <div className='d-flex align-items-center'>
+      <div className='d-flex align-items-center justify-content-between mw100'>
         <h1 className="mb-0">
           <a href="#top" className="d-block ps-3">
             <img src="img/seo/logo.png" className="img-fluid w-100" alt="logo" />
           </a>
         </h1>
-        <button className='navi_btn d-md-none ' id="allMenu" onClick={e => {
+        <button className='navi_btn d-md-none' id="allMenu" onClick={e => {
           setnaviOpen(!naviOpen)
         }} ></button>
       </div>
-
-      <div className='navi d-flex align-items-center justify-content-center'>
+      <div className='navi d-flex align-items-center justify-content-center '>
         <Navi cls={isMobile ? 'mobileNavi ' : ''} toggle={naviOpen ? 'on' : ''} />
       </div>
     </header>

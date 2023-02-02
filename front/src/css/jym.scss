@@ -84,6 +84,10 @@
     font-weight: 700;
   }
 
+  .w100 {
+    width: 100%;
+  }
+
   .common_text {
     font-weight: 700;
     font-size: 30px;
@@ -153,7 +157,7 @@
   }
 
   .navi {
-    width: 86vw;
+
 
     .gnb_ul {
 
@@ -198,27 +202,27 @@
     }
   }
 
-.navi_btn{
-    background-image: url(../../public/img/main/common/list-ul.svg);
+  .navi_btn {
+    background-image: url(../../public/img/main/common/ullist.svg);
     background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 20px;
     border: none;
     background-color: transparent;
-}
+    padding-left: 2rem;
+  }
+
   .mobileNavi {
     position: absolute;
-    top: calc(100% + 1px);
+    height: 100vh;
+    top: 100%;
     left: 0;
     right: 0;
-    background-color: white;
+    padding-top: 6.875rem;
+    background-color: #101018;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
-
-    a {
-      color: black !important
-    }
+    transition: max-height 0.7s ease-out;
 
     &:before,
     &:after {
@@ -232,7 +236,23 @@
       max-height: calc(100vh - 50px);
 
     }
+    li{
+      padding-bottom: 2rem;
+      padding-left: 1.875rem !important;
+    }
 
+  }
+
+  @media (min-width:768px) {
+    .navi {
+      width: 86vw;
+    }
+  }
+
+  @media (max-width:768px) {
+    .mw100 {
+      width: 100%;
+    }
   }
 }
 
@@ -335,11 +355,13 @@
       }
     }
   }
+
   @media (max-width:450px) {
     .DIVE {
       transform: translateY(16.25rem);
     }
   }
+
   @media (max-width:400px) {
     .Intro_textbox h3 {
       font-size: 35px;
@@ -614,9 +636,11 @@
 
   .WorkSection {
     padding-bottom: 9rem;
-    .progress-bar{
+
+    .progress-bar {
       background-color: transparent;
     }
+
     .swiper-slide-active {
       .progress {
         font-size: 14px;
@@ -624,13 +648,14 @@
         height: 18px;
         width: 72%;
         animation: bar 1.5s linear;
+        border-radius: 0;
 
         .bg-html {
           background-color: #39404a;
         }
 
         .bg-css {
-          background-color: #696d76 ;
+          background-color: #696d76;
         }
 
         .bg-javascript {
@@ -1247,11 +1272,25 @@
 }
 
 #Footer {
-  p {
+  .footer_text {
     font-weight: 400;
     font-size: 18px;
     line-height: 129.5%;
     color: #101018;
     opacity: 0.7;
+  }
+  .sns_img{
+    height: 29px;
+    width: 30px;
+  }
+
+  @media (max-width:768px) {
+    .footer_text{
+      font-size: 14px;
+    }
+    .sns_img{
+      height: 25px;
+      width: 25px;
+    }
   }
 }

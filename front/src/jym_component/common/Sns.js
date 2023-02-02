@@ -23,7 +23,7 @@ function Sns() {
                         return (
                             <li key={"sns" + index} className="{item.snstitle} pe-4">
                                 <a href={item.snslink} target="_blank">
-                                    <img src={item.snsimg} alt="" />
+                                    <img className="sns_img" src={item.snsimg} alt="" />
                                 </a>
                             </li>
                         )

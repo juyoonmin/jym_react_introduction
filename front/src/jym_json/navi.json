@@ -3,19 +3,23 @@
     [
         {
             "naviText": "About",
-            "naviLink": "#profile"
+            "naviLink": "#profile",
+            "cls": "navi_name f400 text-decoration-none text-white"
         },
         {
             "naviText": "Work",
-            "naviLink": "#Work"
+            "naviLink": "#Work",
+            "cls": "navi_name f400 text-decoration-none text-white"
         },
         {
             "naviText": "Interview",
-            "naviLink": "#Concact"
+            "naviLink": "#Concact",
+            "cls": "navi_name f400 text-decoration-none text-white"
         },
         {
             "naviText": "Contact",
-            "naviLink": "#contactfrom"
+            "naviLink": "#fromstart",
+            "cls": "navi_name f400 text-decoration-none text-white"
         }
     ]
 }
