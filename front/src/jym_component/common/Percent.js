@@ -1,25 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 
 
 function Percent(props) {
+
+
+
     useEffect(() => {
+        AOS.init();
         var cnt = document.querySelectorAll(".count")[props.num];
         var water = document.querySelectorAll(".water")[props.num];
-        var percent = cnt.innerText;
-        var interval;
-        interval = setInterval(function () {
-            percent++;
-            cnt.innerHTML = percent;
-            water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-            if (percent == props.percent) {
-                clearInterval(interval);
-            }
-        }, 60);
-        AOS.init();
-    })
+        const Skills = document.querySelector('#skills');
+        const percentscroll = window.scrollY + Skills.getBoundingClientRect().top;
+
+        if (window.scrollY >= percentscroll) {
+            var percent = cnt.innerText;
+            var interval;
+            interval = setInterval(function () {
+                percent++;
+                cnt.innerHTML = percent;
+                water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+                if (percent == props.percent) {
+                    clearInterval(interval);
+                }
+            }, 60);
+        }
+        
+    }, [])
+    
     return (
         <div className={props.cls_2}>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" className={props.cls_3}>

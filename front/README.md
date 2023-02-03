@@ -71,3 +71,7 @@ node연동전 작업분은 MY_BRANCH에 위치
 * swiper 부분 ProgressBar 처리 완료
 * Footer 제작 완료
 * aos수정, 모바일버전 네비 작업
+
+# 2023-02-03
+* 네비작업완료
+* Percent 스크롤 위치에 따라 작동되게 테스트중

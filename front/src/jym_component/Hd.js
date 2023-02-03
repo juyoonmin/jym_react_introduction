@@ -65,12 +65,14 @@ function Header(props) {
             <img src="img/seo/logo.png" className="img-fluid w-100" alt="logo" />
           </a>
         </h1>
-        <button className='navi_btn d-md-none' id="allMenu" onClick={e => {
+        <div className={naviOpen ? 'btn_toggle d-md-none' : 'd-md-none'}>
+          <button className='navi_btn' id="allMenu" onClick={e => {
           setnaviOpen(!naviOpen)
         }} ></button>
+        </div>
       </div>
       <div className='navi d-flex align-items-center justify-content-center '>
-        <Navi cls={isMobile ? 'mobileNavi ' : ''} toggle={naviOpen ? 'on' : ''} />
+        <Navi cls={isMobile ? 'mobileNavi ' : ''} toggle={naviOpen ? 'on' : ''}  />
       </div>
     </header>
   )

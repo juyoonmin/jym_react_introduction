@@ -161,9 +161,11 @@
 
     .gnb_ul {
 
-      // padding-left: 27.063rem;
+      #naivID0 {
+        padding-left: 0;
+      }
+
       li {
-        padding-right: 1.5rem;
         padding-left: 3.5rem;
 
         .navi_name {
@@ -177,12 +179,11 @@
           &::after {
             position: absolute;
             content: "";
-            // background: #fff;
             background: linear-gradient(#31396A, #545D97, #D9D9D9);
             width: 104%;
             height: 112%;
             left: -2%;
-            top: -5%;
+            top: -6%;
             border-radius: 50px;
             transform: scaleY(0);
             z-index: -1;
@@ -209,7 +210,7 @@
     height: 20px;
     border: none;
     background-color: transparent;
-    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .mobileNavi {
@@ -218,11 +219,12 @@
     top: 100%;
     left: 0;
     right: 0;
-    padding-top: 6.875rem;
-    background-color: #101018;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.7s ease-out;
+    background-color: #101018;
+    font-size: 20px;
+
 
     &:before,
     &:after {
@@ -234,18 +236,36 @@
 
     &.on {
       max-height: calc(100vh - 50px);
-
+      background-color: #101018;
     }
-    li{
+
+    li {
       padding-bottom: 2rem;
       padding-left: 1.875rem !important;
+
+    }
+
+    #naivID0 {
+      padding-top: 6.875rem;
     }
 
   }
 
+  .btn_toggle {
+    .navi_btn {
+      background-image: url(../../public/img/main/common/xicon.svg);
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 20px;
+      border: none;
+      background-color: transparent;
+      padding-right: 2rem;
+    }
+  }
+
   @media (min-width:768px) {
     .navi {
-      width: 86vw;
+      width: 87vw;
     }
   }
 
@@ -521,6 +541,7 @@
     @media (max-width:768px) {
       .Mh_0 {
         height: 0;
+        width: 200px;
       }
 
       .skillslist_1 {
@@ -538,43 +559,94 @@
       }
 
       .water_box_1 {
-        height: 110px;
-        width: 110px;
+        height: 90px;
+        width: 90px;
       }
 
       .water_box_2 {
-        height: 110px;
-        width: 110px;
+        height: 90px;
+        width: 90px;
       }
 
       .water_box_3 {
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
       }
 
       .water_box_4 {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
       }
 
       .water_box_5 {
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
       }
 
       .water_box_6 {
-        height: 110px;
-        width: 110px;
+        height: 90px;
+        width: 90px;
       }
 
       .water_box_7 {
-        height: 110px;
-        width: 110px;
+        height: 90px;
+        width: 90px;
 
       }
+
+      .skillbox_1 {
+        padding-right: 2rem;
+      }
+
+      .skillbox_2 {
+        padding-left: 2rem;
+      }
+
+      .skillbox_3 {
+        padding-right: 2rem;
+      }
+
+      .skillbox_5 {
+        padding-left: 2rem;
+      }
+
+      .skillbox_6 {
+        padding-right: 2rem;
+      }
+
+      .skillbox_7 {
+        padding-left: 2rem;
+      }
+
     }
 
 
+  }
+
+  @media (min-width:991px) {
+    .skillbox_1 {
+      padding-right: 3rem;
+    }
+
+    .skillbox_2 {
+      padding-right: 18px;
+    }
+
+    .skillbox_3 {
+      padding-right: 120px;
+    }
+
+    .skillbox_5 {
+      padding-left: 120px;
+    }
+
+    .skillbox_6 {
+      padding-right: 3rem;
+    }
+
+    .skillbox_7 {
+      padding-left: 18px;
+    }
   }
 
   @media (min-width:768px) {
@@ -631,7 +703,7 @@
 }
 
 #Work {
-  height: 140vh;
+  height: 150vh;
   padding-top: 10rem;
 
   .WorkSection {
@@ -739,9 +811,12 @@
 
   @media (min-width:768px) {
     .WorkSection {
+      
+
       .swiper-pagination {
         display: flex;
         transform: translate(-4px, -32px);
+
       }
 
       .swiper-pagination-bullet {
@@ -813,6 +888,11 @@
 
     .WorkSection {
       padding-bottom: 2rem;
+      .swiper-slide-active {
+        .progress {
+          font-size: 11px;
+        }
+      }
 
       .workslide {
         .workinfo {
@@ -1279,16 +1359,18 @@
     color: #101018;
     opacity: 0.7;
   }
-  .sns_img{
+
+  .sns_img {
     height: 29px;
     width: 30px;
   }
 
   @media (max-width:768px) {
-    .footer_text{
+    .footer_text {
       font-size: 14px;
     }
-    .sns_img{
+
+    .sns_img {
       height: 25px;
       width: 25px;
     }

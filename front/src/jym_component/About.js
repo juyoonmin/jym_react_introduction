@@ -1,5 +1,6 @@
 import Common from "./common/Common";
 import Percent from "./common/Percent";
+import Percent_test from "./common/Percent_test";
 import { useEffect, useRef, useState } from 'react';
 
 
@@ -12,6 +13,9 @@ function About(props) {
     const [navieffect, setnavieffect] = useState(false);
 
 
+    const {scrollY} = Percent_test;
+
+    console.log(Percent_test)
     const HandleScroll = () => {
         if (window.scrollY > TargetRef) {
             document.querySelector('#hd .gnb_ul li').classList.add('navi_name');
@@ -63,7 +67,7 @@ function About(props) {
                 </div>
                 <div id="skills" className="Skills container">
                     <div className="">
-                        <h3 className="common_text">Skills</h3>
+                        <h3 className="common_text">Skills {scrollY}</h3>
                     </div>
                     <div className="d-flex flex-column align-items-center">
                         <div className="skillslist_1 d-flex align-items-center">
