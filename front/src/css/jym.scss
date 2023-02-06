@@ -48,8 +48,7 @@
   }
 
   .waves_1 {
-    bottom: 0;
-    transform: translateY(120px);
+    transform: translateY(-180px);
   }
 
   .waves_2 {
@@ -64,8 +63,8 @@
 
     .textblend {
       mix-blend-mode: difference;
-      font-weight: 700;
-      font-size: 150px;
+      font-weight: 800;
+      font-size: 120px;
       color: #ffffff;
       position: absolute;
       letter-spacing: 0.08em;
@@ -123,7 +122,7 @@
   @media (max-width:991px) {
     .waves_3 {
       .textblend {
-        font-size: 100px;
+        font-size: 80px;
       }
     }
   }
@@ -140,12 +139,17 @@
 
     .waves_3 {
       .textblend {
-        font-size: 50px;
+        font-size: 60px;
       }
     }
+  }
 
-
-
+  @media (max-width:520px) {
+    .waves_3 {
+      .textblend {
+        font-size: 40px;
+      }
+    }
   }
 }
 
@@ -206,7 +210,6 @@
   .navi_btn {
     background-image: url(../../public/img/main/common/ullist.svg);
     background-repeat: no-repeat;
-    width: 24px;
     height: 20px;
     border: none;
     background-color: transparent;
@@ -251,7 +254,13 @@
 
   }
 
+  .btndiv {
+    right: 0;
+  }
+
   .btn_toggle {
+    right: 0;
+
     .navi_btn {
       background-image: url(../../public/img/main/common/xicon.svg);
       background-repeat: no-repeat;
@@ -269,11 +278,7 @@
     }
   }
 
-  @media (max-width:768px) {
-    .mw100 {
-      width: 100%;
-    }
-  }
+
 }
 
 //Intro
@@ -397,8 +402,8 @@
   }
 
   h2 {
-    font-weight: 900;
-    font-size: 90px;
+    font-weight: 800;
+    font-size: 70px;
     color: #101018;
     padding-left: 2.5rem;
     padding-top: 1rem;
@@ -407,7 +412,7 @@
 
   @media (max-width:768px) {
     h2 {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 }
@@ -764,6 +769,7 @@
           .maintitle {
             font-weight: 700;
             font-size: 50px;
+            padding-bottom: 26px;
           }
 
           .subtitle {}
@@ -811,7 +817,7 @@
 
   @media (min-width:768px) {
     .WorkSection {
-      
+
 
       .swiper-pagination {
         display: flex;
@@ -826,7 +832,9 @@
         height: 70px;
         width: 81.91px;
         border-radius: 1rem;
-        margin-right: 24px;
+        margin-right: 20px;
+
+        &.swiper-pagination-bullet-active {}
 
         &:checked {
           opacity: 0.5;
@@ -888,6 +896,7 @@
 
     .WorkSection {
       padding-bottom: 2rem;
+
       .swiper-slide-active {
         .progress {
           font-size: 11px;
@@ -896,7 +905,25 @@
 
       .workslide {
         .workinfo {
-          // padding-bottom: 3rem;
+          .workinfobox_1 {
+            .maintitle {
+              padding-bottom: 0;
+            }
+          }
+
+          .workinfobox_3 {
+            .git_img_m {
+              height: 25px;
+            }
+
+            .notion_img_m {
+              height: 31px;
+            }
+
+            .figma_img_m {
+              height: 25px;
+            }
+          }
         }
 
         .workimg {
@@ -916,7 +943,7 @@
     .swiper {
 
       .swiper-pagination {
-        transform: translateY(-28.5rem);
+        transform: translateY(-26rem);
         width: 100%;
 
         .swiper-pagination-bullet {
@@ -1089,6 +1116,9 @@
       }
     }
 
+    .listm {
+      margin: 1.313rem;
+    }
 
     textarea {
       background-color: #101018;
@@ -1168,13 +1198,13 @@
       .selectUl {
         max-height: 0;
         overflow: hidden;
-        // transition: 0.7s;
+        transition: 0.8s;
+        top: 100%;
         width: 100%;
         background-color: #1C1C24;
         color: #57575b;
         border-radius: 1rem;
         font-weight: 500;
-        margin-top: 13.6rem;
         z-index: 100;
 
 
@@ -1215,7 +1245,7 @@
     // width: 11.688rem;
     height: 4.25rem;
     font-weight: 600;
-    padding-right: 15px;
+    padding-right: 22px;
 
     &::before {
       content: "";
@@ -1223,7 +1253,7 @@
       background-repeat: no-repeat;
       width: 13px;
       height: 10px;
-      margin-right: 3px;
+      margin-right: 10px;
       opacity: 0;
     }
   }
@@ -1277,12 +1307,12 @@
 
         .language_list_4 {
           padding-top: 1rem;
-          // transform: translateX(5.1rem);
         }
 
         .language_list_5 {
           padding-top: 1rem;
-          // transform: translateX(-5.1rem);
+          position: relative;
+          right: 34%;
         }
       }
 
@@ -1297,14 +1327,37 @@
           margin-top: 1rem;
 
           p {
-            padding: 1.188rem !important;
+            margin: 1.188rem;
           }
         }
       }
 
-      label.check span {
-        // height: 3rem;
+      .listm {
+        margin: 1rem;
       }
+
+      .formindent {
+        height: 140px;
+
+        textarea {
+          height: 110px;
+        }
+      }
+
+      label.check span {
+        padding: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      label.check input:checked+span {
+        &::before {
+          // display: none;
+        }
+      }
+
     }
   }
 
@@ -1352,6 +1405,8 @@
 }
 
 #Footer {
+  height: 120px;
+
   .footer_text {
     font-weight: 400;
     font-size: 18px;

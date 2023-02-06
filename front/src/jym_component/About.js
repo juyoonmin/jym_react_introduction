@@ -9,32 +9,30 @@ import { useEffect, useRef, useState } from 'react';
 
 
 function About(props) {
+    const containerRef = useRef(null);
     const TargetRef = useRef(null);
     const [navieffect, setnavieffect] = useState(false);
 
 
-    const {scrollY} = Percent_test;
-
-    console.log(Percent_test)
-    const HandleScroll = () => {
-        if (window.scrollY > TargetRef) {
-            document.querySelector('#hd .gnb_ul li').classList.add('navi_name');
-        } else {
-            document.querySelector('#hd .gnb_ul li').classList.remove('navi_name')
-        }
-        setnavieffect(false);
-    };
+    // const HandleScroll = () => {
+    //     if (window.scrollY > TargetRef) {
+    //         document.querySelector('#hd .gnb_ul li').classList.add('navi_name');
+    //     } else {
+    //         document.querySelector('#hd .gnb_ul li').classList.remove('navi_name')
+    //     }
+    //     setnavieffect(false);
+    // };
 
 
-    useEffect(() => {
-        const Timer = setInterval(() => {
-            window.addEventListener("scroll", HandleScroll);
-        }, 100);
-        return () => {
-            clearInterval(Timer);
-            window.removeEventListener("scroll", HandleScroll);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const Timer = setInterval(() => {
+    //         window.addEventListener("scroll", HandleScroll);
+    //     }, 100);
+    //     return () => {
+    //         clearInterval(Timer);
+    //         window.removeEventListener("scroll", HandleScroll);
+    //     };
+    // }, []);
 
     
 
@@ -67,11 +65,11 @@ function About(props) {
                 </div>
                 <div id="skills" className="Skills container">
                     <div className="">
-                        <h3 className="common_text">Skills {scrollY}</h3>
+                        <h3 className="common_text">Skills</h3>
                     </div>
                     <div className="d-flex flex-column align-items-center">
                         <div className="skillslist_1 d-flex align-items-center">
-                            <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
+                            <Percent ref={containerRef} num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
                             <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />
                         </div>
                         <div className="skillslist_2 d-flex Mfc align-items-center" data-anchor-id="1">

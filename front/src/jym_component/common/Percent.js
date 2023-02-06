@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -7,29 +7,53 @@ import "aos/dist/aos.css";
 function Percent(props) {
 
 
+    const containerRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
 
+    const callbackFunction = (entries) => {
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting);
+    };
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 1
+    };
     useEffect(() => {
         AOS.init();
+        const observer = new IntersectionObserver(callbackFunction, options);
+        if (containerRef.current) observer.observe(containerRef.current);
         var cnt = document.querySelectorAll(".count")[props.num];
-        var water = document.querySelectorAll(".water")[props.num];
-        const Skills = document.querySelector('#skills');
-        const percentscroll = window.scrollY + Skills.getBoundingClientRect().top;
+        var water = document.querySelectorAll(".water")[props.num]; var percent = cnt.innerText;
+        var interval;
+        interval = setInterval(function () {
+            percent++;
+            cnt.innerHTML = percent;
+            water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+            if (percent == props.percent) {
+                clearInterval(interval);
+            }
+        }, 60);
+        return () => {
+            if (containerRef.current) observer.unobserve(containerRef.current);
+        };
+    }, [containerRef, options]);
 
-        if (window.scrollY >= percentscroll) {
-            var percent = cnt.innerText;
-            var interval;
-            interval = setInterval(function () {
-                percent++;
-                cnt.innerHTML = percent;
-                water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-                if (percent == props.percent) {
-                    clearInterval(interval);
-                }
-            }, 60);
-        }
-        
-    }, [])
-    
+
+
+    // useLayoutEffect(() => {
+
+
+    //     const Skills = document.querySelector('#skills');
+    //     const percentscroll = window.scrollY + Skills.getBoundingClientRect().top;
+
+    //     if (window.scrollY >= percentscroll) {
+
+    //     }
+
+    // }, [])
+
     return (
         <div className={props.cls_2}>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" className={props.cls_3}>

@@ -57,15 +57,15 @@ function Header(props) {
   return (
     <header ref={targetRef} id="hd"
       className="App-header d-flex
-                  align-items-center px-lg-5 py-3
+                  align-items-center px-lg-5 py-3 py-md-4
                   fixed-top maincolor">
-      <div className='d-flex align-items-center justify-content-between mw100'>
+      <div className='d-flex align-items-center'>
         <h1 className="mb-0">
           <a href="#top" className="d-block ps-3">
             <img src="img/seo/logo.png" className="img-fluid w-100" alt="logo" />
           </a>
         </h1>
-        <div className={naviOpen ? 'btn_toggle d-md-none' : 'd-md-none'}>
+        <div className={naviOpen ? 'btn_toggle d-md-none position-absolute'  : 'btndiv position-absolute d-md-none'}>
           <button className='navi_btn' id="allMenu" onClick={e => {
           setnaviOpen(!naviOpen)
         }} ></button>

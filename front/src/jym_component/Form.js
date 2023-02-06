@@ -3,23 +3,23 @@ import { useEffect } from "react";
 
 function Form(props) {
     useEffect(() => {
-        document.querySelector('.selectBox').addEventListener('click', function (e) {
+        document.querySelector('.selectDiv').addEventListener('click', function (e) {
             document.querySelector('.selectUl').classList.toggle('down');
             document.querySelector('.selectDiv').classList.toggle('rotatechecked');
         });
-        document.querySelectorAll('.selectli').forEach(function (item) {
-            item.addEventListener('click', function (e) {
-                document.querySelector('.selectUl').classList.remove('down');
-                document.querySelector('.selectDiv').classList.remove('rotatechecked');
-            })
-        })
+        // document.querySelectorAll('.selectli').forEach(function (item) {
+        //     item.addEventListener('click', function (e) {
+        //         document.querySelector('.selectUl').classList.remove('down');
+        //         document.querySelector('.selectDiv').classList.remove('rotatechecked');
+        //     })
+        // })
 
         const selectList = document.querySelectorAll('.selectUl > li');
 
         selectList.forEach((value, index) => {
             value.addEventListener('click', function (e) {
                 if (index == (selectList.length - 1)) {
-                    document.querySelector('.selectDiv').innerHTML = `<input type="text" class="p-3" id="" aria-describedby="selectedEmail" className="p-3" name="area" placeholder="@email.com" required />`
+                    document.querySelector('.selectDiv').innerHTML = `<input type="text" class="listm" id="" aria-describedby="selectedEmail" className="listm" name="area" placeholder="@email.com" required />`
                     // document.getElementsByName('ct_emailSelect')[0].value = document.querySelector('.selectDiv input').value;
                 } else {
                     document.querySelector('.selectBox').innerHTML = e.target.textContent;
@@ -40,15 +40,15 @@ function Form(props) {
                 <h2>With Me</h2>
             </div>
             <div id="fromstart" className="contact_text">
-                <div className="pb-4">
+                <div className="pb-5">
                     <h3 className="common_text">Contact</h3>
                 </div>
             </div>
-            <div className="pb-3 d-flex">
+            {/* <div className="pb-3 d-flex">
                 <p className="line lg">
                     <label>Main Language</label>
                 </p>
-            </div>
+            </div> */}
             <div className="form">
                 <form action="" method="post" target="example">
                     <input type="hidden" name="area" />
@@ -91,7 +91,7 @@ function Form(props) {
                         </li>
                         <li className=" pt-3">
                             <div className="line ">
-                                <p className=" m-3">
+                                <p className=" listm">
                                     <input type="text" name="company" className="" placeholder="Company Name" required />
                                 </p>
                             </div>
@@ -99,12 +99,12 @@ function Form(props) {
                         <li className="py-3">
                             <ul className="d-flex justify-content-between emailul">
                                 <li className="line email_li">
-                                    <p className="m-3">
+                                    <p className="listm">
                                         <input type="text" name="email" className="" placeholder="Email Name" required />
                                     </p>
                                 </li>
                                 <li className="line email_li position-relative selectDiv d-flex align-items-center ">
-                                    <p className="selectBox text-black d-flex justify-content-between align-items-center p-3"><label className="form-label" >Address Select</label><i className="selectCaret bi bi-caret-down-fill d-flex align-items-center"></i></p>
+                                    <p className="selectBox text-black d-flex justify-content-between align-items-center listm"><label className="form-label" >Address Select</label><i className="selectCaret bi bi-caret-down-fill d-flex align-items-center"></i></p>
                                     <ul className="selectUl position-absolute">
                                         <li className="selectli ps-3 py-2">@naver.com</li>
                                         <li className="selectli ps-3 py-2">@daum.net</li>

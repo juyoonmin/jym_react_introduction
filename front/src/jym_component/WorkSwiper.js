@@ -4,7 +4,6 @@ import { Pagination, } from 'swiper';
 import "swiper/css";
 import "swiper/css/pagination";
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import { useEffect } from 'react';
 
 
 
@@ -59,7 +58,7 @@ const Worksswiper = () => {
                                 <div className='workinfo col-12 col-md-6 d-flex flex-column text-white ps-md-5'>
                                     <div className='workinfobox_1'>
                                         <p className='maintitle'>{item.title}</p>
-                                        <p className='subtitle infotext'>{item.subtitle}</p>
+                                        {/* <p className='subtitle infotext'>{item.subtitle}</p> */}
                                         <p className='explanation main_explanation infotext py-4'>{item.explanation}</p>
                                     </div>
                                     <div className='workinfobox_2 pt-5 pb-3'>
@@ -85,9 +84,9 @@ const Worksswiper = () => {
                                         </div>
                                     </div>
                                     <div className='workinfobox_3 d-flex'>
-                                        <a href={item.gitsrc} target="_blank"><img src={item.gitimg} alt="" /></a>
-                                        <a className='px-4' href={item.notionsrc} target="_blank"><img src={item.notionimg} alt="" /></a>
-                                        <a href={item.figmasrc} target="_blank"><img src={item.figmaimg} alt="" /></a>
+                                        <a href={item.gitsrc} target="_blank"><img className='git_img_m' src={item.gitimg} alt="" /></a>
+                                        <a className='px-4' href={item.notionsrc} target="_blank"><img className='notion_img_m' src={item.notionimg} alt="" /></a>
+                                        <a href={item.figmasrc} target="_blank"><img className='figma_img_m' src={item.figmaimg} alt="" /></a>
                                     </div>
                                 </div>
                             </div>
