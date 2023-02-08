@@ -83,3 +83,4 @@ node연동전 작업분은 MY_BRANCH에 위치
 * 피그마보고 수정중
 # 2023-02-08
 * 네비,percent 테스트중
+* percent에 IntersectionObserver,useImperativeHandle 테스트중

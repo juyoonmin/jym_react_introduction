@@ -1,66 +1,86 @@
-import React, { useMemo, useRef, useEffect, useState } from 'react';
+import React, { useImperativeHandle, useMemo, useRef, useEffect, useState, forwardRef } from 'react';
 import { throttle } from 'lodash';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-const Percent = React.forwardRef(() => {
-    function percent(props, ref) {
-    const containerRef = React.useRef();
-    // const containerRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
 
-    const callbackFunction = (entries) => {
-        const [entry] = entries;
-        setIsVisible(entry.isIntersecting);
-    };
+function Percent(props, ref) {
+    // const containerRef = useRef();
+    // const [isVisible, setIsVisible] = useState(false);
 
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 1
-    };
-    useEffect(() => {
-        const observer = new IntersectionObserver(callbackFunction, options);
-        if (containerRef.current) observer.observe(containerRef.current);
+    // const callbackFunction = (entries) => {
+    //     const [entry] = entries;
+    //     setIsVisible(entry.isIntersecting);
+    // };
 
-        return () => {
-            if (containerRef.current) observer.unobserve(containerRef.current);
-        };
-    }, [containerRef, options]);
+    // const options = {
+    //     root: document.getElementById('skills'),
+    //     rootMargin: '0px',
+    //     threshold: 1
+    // };
+
+    useImperativeHandle(ref,() => ({
+            percentst: () => {
+            var cnt = document.querySelectorAll(".count")[props.num];
+            var water = document.querySelectorAll(".water")[props.num];
+            var percent = cnt.innerText;
+            var interval;
+            interval = setInterval(function () {
+                percent++;
+                cnt.innerHTML = percent;
+                water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+                if (percent == props.percent) {
+                    clearInterval(interval);
+                }
+            }, 80);
+        }
+    }));
+
+    // useImperativeHandle(ref, () => {
+    //     return {
+    //         percentst: () => {
+    //             var cnt = document.querySelectorAll(".count")[props.num];
+    //             var water = document.querySelectorAll(".water")[props.num];
+    //             var percent = cnt.innerText;
+    //             var interval;
+    //             interval = setInterval(function () {
+    //                 percent++;
+    //                 cnt.innerHTML = percent;
+    //                 water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+    //                 if (percent == props.percent) {
+    //                     clearInterval(interval);
+    //                 }
+    //             }, 80);
+    //         }
+    //     }
+    // })
 
     useEffect(() => {
         AOS.init();
+        // const observer = new IntersectionObserver(callbackFunction, options);
+        // console.log(containerRef.current)
+        // if (containerRef.current) observer.observe(containerRef.current);
 
-    }, [])
-    const percentstart = (() => {
-        var cnt = document.querySelectorAll(".count")[props.num];
-        var water = document.querySelectorAll(".water")[props.num]; var percent = cnt.innerText;
-        var interval;
-        interval = setInterval(function () {
-            percent++;
-            cnt.innerHTML = percent;
-            water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-            if (percent == props.percent) {
-                clearInterval(interval);
-            }
-        })
-    }, 60);
+        // return () => {
+        //     var cnt = document.querySelectorAll(".count")[props.num];
+        //     var water = document.querySelectorAll(".water")[props.num];
+        //     var percent = cnt.innerText;
+        //     var interval;
+        //     interval = setInterval(function () {
+        //         percent++;
+        //         cnt.innerHTML = percent;
+        //         water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+        //         if (percent == props.percent) {
+        //             clearInterval(interval);
+        //         }
+        //     }, 80);
 
-
-
-
-
-
-
-
-
+        //     if (containerRef.current) observer.unobserve(containerRef.current);
+        // };
+    }, []);
     return (
-        <div className={props.cls_2}>
-            <h1 className='text-white'>{isVisible? "asdasdasdasd" : "11111111111111111111"}</h1>
-            <div>A lot of content ...</div>
-            <div ref={containerRef}>Observe me</div>
-
+        <div className={props.cls_2} >
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" className={props.cls_3}>
                 <symbol id="wave_2">
                     <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
@@ -86,7 +106,7 @@ const Percent = React.forwardRef(() => {
         </div>
     );
 }
-    })
 
 
-export default Percent;
+
+export default forwardRef(Percent);
