@@ -7,7 +7,7 @@ function Common(props) {
         AOS.init();
     })
     return (
-        <div id="Common" className="container d-flex ps-5">
+        <div id="Common" className="container d-flex ps-md-5">
             <img src="./img/main/common/aaa.png" alt="" />
             <div  className='common_text'>
                 <h2  data-aos="fade-up"

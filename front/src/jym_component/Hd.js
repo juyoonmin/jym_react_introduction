@@ -50,7 +50,10 @@ function Header(props) {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener('resize', resizeHandler)
     };
+
+    
   }, []);
+
 
 
 

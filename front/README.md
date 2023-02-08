@@ -14,6 +14,8 @@ node연동전 작업분은 MY_BRANCH에 위치
     "node-sass": "^4.14.0",
     "http-proxy-middleware": "^2.0.6",
     "swiper": "^8.4.5",
+    "lodash": "^4.17.21",
+    "react-router-dom": "^6.8.1",
 # 노드 설치 모듈
     "concurrently": "^7.6.0",
     "cors": "^2.8.5",
@@ -79,3 +81,5 @@ node연동전 작업분은 MY_BRANCH에 위치
 # 2023-02-06
 * 햄버거버튼 사파리 이슈 해결
 * 피그마보고 수정중
+# 2023-02-08
+* 네비,percent 테스트중

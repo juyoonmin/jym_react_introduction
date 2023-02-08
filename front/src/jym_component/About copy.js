@@ -1,6 +1,5 @@
 import Common from "./common/Common";
 import Percent from "./common/Percent";
-import Percent_test from "./common/Percent_test";
 import { useEffect, useRef, useState } from 'react';
 import React from "react";
 
@@ -9,8 +8,8 @@ import React from "react";
 
 
 
-const About = React.forwardRef(
-    function about(props, ref) {
+function About(props) {
+    const containerRef = useRef(null)
         return (
             <div className="section_1  position-relative" data-anchor-id="2">
                 <Common title="WHO?" anchor="[data-anchor-id='2']" />
@@ -43,7 +42,7 @@ const About = React.forwardRef(
                         </div>
                         <div className="d-flex flex-column align-items-center">
                             <div className="skillslist_1 d-flex align-items-center">
-                                <Percent ref={ref} num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
+                                <Percent ref={containerRef} num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
                                 <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />
                             </div>
                             <div className="skillslist_2 d-flex Mfc align-items-center" data-anchor-id="1">
@@ -72,8 +71,6 @@ const About = React.forwardRef(
 
         );
     }
-
-)
 
 
 

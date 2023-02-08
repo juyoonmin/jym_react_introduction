@@ -140,6 +140,9 @@
     .waves_3 {
       .textblend {
         font-size: 60px;
+        h2{
+          padding: 0;
+        }
       }
     }
   }
@@ -171,6 +174,14 @@
 
       li {
         padding-left: 3.5rem;
+
+        &.active {
+          a {
+            &::after {
+              transform: scaleY(1) !important;
+            }
+          }
+        }
 
         .navi_name {
           opacity: 0.7;
@@ -411,9 +422,15 @@
   }
 
   @media (max-width:768px) {
-    h2 {
-      font-size: 50px;
+    .common_text {
+      margin: 0 auto;
+
+      h2 {
+        font-size: 50px;
+        padding: 0;
+      }
     }
+
   }
 }
 
@@ -712,7 +729,7 @@
   padding-top: 10rem;
 
   .WorkSection {
-    padding-bottom: 9rem;
+    padding-bottom: 8.7rem;
 
     .progress-bar {
       background-color: transparent;
@@ -769,7 +786,7 @@
           .maintitle {
             font-weight: 700;
             font-size: 50px;
-            padding-bottom: 26px;
+            padding-bottom: 28px;
           }
 
           .subtitle {}
@@ -1296,6 +1313,11 @@
 
   @media (max-width:768px) {
     #contactfrom {
+      .With_Me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .language ul {
         flex-wrap: wrap;
 
