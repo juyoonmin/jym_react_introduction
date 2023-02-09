@@ -5,8 +5,7 @@ import "aos/dist/aos.css";
 
 
 
-function Percent(props) {
-    const waterRef = useRef();
+function percent(props, ref) {
     // const containerRef = useRef();
     // const [isVisible, setIsVisible] = useState(false);
 
@@ -21,27 +20,25 @@ function Percent(props) {
     //     threshold: 1
     // };
 
+
     // const percentst =()=>{
-
+    var cnt = document.querySelectorAll(".count")[props.num];
+    console.log(cnt)
+    var water = document.querySelectorAll(".water")[props.num];
+    var percent = cnt.innerText;
+    var interval;
+    interval = setInterval(function () {
+        percent++;
+        cnt.innerHTML = percent;
+        water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+        if (percent == props.percent) {
+            clearInterval(interval);
+        }
+    }, 80);
     // }
-    
 
-    // useImperativeHandle(ref, () => ({
-    //     percentst() {
-    //         var cnt = document.querySelectorAll(".count")[props.num];
-    //         console.log(cnt)
-    //         var water = document.querySelectorAll(".water")[props.num];
-    //         var percent = cnt.innerText;
-    //         var interval;
-    //         interval = setInterval(function () {
-    //             percent++;
-    //             cnt.innerHTML = percent;
-    //             water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-    //             if (percent == props.percent) {
-    //                 clearInterval(interval);
-    //             }
-    //         }, 80);
-    //     }
+    // useImperativeHandle(ref,() => ({
+    //         percent,
     // }));
 
     // useImperativeHandle(ref, () => {
@@ -62,44 +59,28 @@ function Percent(props) {
     //         }
     //     }
     // })
+}
+function Percent(props, ref) {
 
-    // const [pct, setPct] = useState(0);
-
-    // const aaa = (b)=>{
-    //     var pct = cnt.innerText;
-    //     var interval;
-    //     interval = setInterval(function () {
-    //         setPct(pct+1);
-    //         cnt.innerHTML = pct;
-    //         water.style.transform = 'translate(0' + ',' + (100 - pct) + '%)';
-    //         if (pct == b) {
-    //             clearInterval(interval);
-    //         }
-    //     }, 80);
-    // }
-    
-    // aaa()
-    
     useEffect(() => {
-
         AOS.init();
         // const observer = new IntersectionObserver(callbackFunction, options);
         // console.log(containerRef.current)
         // if (containerRef.current) observer.observe(containerRef.current);
 
         // return () => {
-            // var cnt = document.querySelectorAll(".count")[props.num];
-            // var water = document.querySelectorAll(".water")[props.num];
-            var percent = 0;
-            var interval;
-            interval = setInterval(function () {
-                percent++;
-                // cnt.innerHTML = percent;
-                waterRef.current.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-                if (percent == props.percent) {
-                    clearInterval(interval);
-                }
-            }, 80);
+        //     var cnt = document.querySelectorAll(".count")[props.num];
+        //     var water = document.querySelectorAll(".water")[props.num];
+        //     var percent = cnt.innerText;
+        //     var interval;
+        //     interval = setInterval(function () {
+        //         percent++;
+        //         cnt.innerHTML = percent;
+        //         water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+        //         if (percent == props.percent) {
+        //             clearInterval(interval);
+        //         }
+        //     }, 80);
 
         //     if (containerRef.current) observer.unobserve(containerRef.current);
         // };
@@ -116,10 +97,10 @@ function Percent(props) {
             </svg>
             <div className={props.cls} data-aos="zoom-in" data-aos-delay={props.aosdelay} data-aos-anchor="[data-anchor-id='1']">
                 <div className="percent">
-                    {/* <div className="percentNum count d-none"></div> */}
+                    <div className="percentNum count d-none"></div>
                     <img className='' src={props.skillimg} />
                 </div>
-                <div ref={waterRef} className="water">
+                <div className="water">
                     <svg viewBox="0 0 560 20" className=" water_wave water_wave_back">
                         <use href='#wave_2'></use>
                     </svg>
@@ -134,4 +115,8 @@ function Percent(props) {
 
 
 
-export default Percent;
+
+
+
+
+export default forwardRef(Percent);

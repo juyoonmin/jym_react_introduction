@@ -12,7 +12,7 @@ import React from "react";
 
 function About(props) {
     const containerRef = useRef();
-    const myRef = useRef();
+    // const myRef = useRef();
     const [isVisible, setIsVisible] = useState(false);
 
     const callbackFunction = (entries) => {
@@ -25,17 +25,57 @@ function About(props) {
         rootMargin: '0px',
         threshold: 1
     };
+
+
+
+    // useEffect(() => {
+    //     const siv = setInterval(() => {
+    //         window.addEventListener("scroll", function () {
+    //             setWsc(window.scrollY)
+    //         }
+    //         )
+    //     }, 10000);
+    //     return () => {
+    //         clearInterval(siv)
+    //         window.removeEventListener("scroll", function () {
+    //             setWsc(window.scrollY)
+    //         }
+    //         );
+    //     }
+    // }, [])
+
+
     useEffect(() => {
+
+
+        // if (isVisible) {
+        //     clearInterval(siv);
+
+        // } else {
+        //     siv = setInterval(() => {
+        //         window.addEventListener('scroll', function () {
+        //             setWsc(window.scrollY)
+        //         })
+        //     }, 1000);
+        // }
+
         const observer = new IntersectionObserver(callbackFunction, options);
-        
-        console.log(containerRef.current)
+
+        // console.log(containerRef.current.getBoundingClientRect().height, window.scrollY, isVisible)
         if (containerRef.current) observer.observe(containerRef.current);
 
         return () => {
-            myRef.current.percentst()
+
+            window.scrollY >= containerRef.current.getBoundingClientRect().height ? setIsVisible(true) : setIsVisible(false)
+
             if (containerRef.current) observer.unobserve(containerRef.current);
         };
     }, [containerRef, options]);
+
+
+
+
+
 
     return (
         <div className="section_1  position-relative" data-anchor-id="2">
@@ -69,27 +109,27 @@ function About(props) {
                     </div>
                     <div className="d-flex flex-column align-items-center">
                         <div className="skillslist_1 d-flex align-items-center">
-                            <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />
-                            <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />
+                            {isVisible && <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />}
+                            {isVisible && <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />}
                         </div>
                         <div className="skillslist_2 d-flex Mfc align-items-center" data-anchor-id="1">
                             <div className="order-md-2 ">
-                                <Percent ref={myRef} num="3" percent="70" skillimg="./img/main/about/html_css.png" cls="water_box water_box_4" cls_2="skillbox skillbox_4  align-items-center d-flex flex-column " cls_3="img-fluid " aosdelay="500" />
+                                {isVisible && <Percent num="3" percent="70" skillimg="./img/main/about/html_css.png" cls="water_box water_box_4" cls_2="skillbox skillbox_4  align-items-center d-flex flex-column " cls_3="img-fluid " aosdelay="500" />}
                             </div>
                             <div className="d-none d-md-flex order-md-1 ">
-                                <Percent num="2" percent="85" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="1500" />
+                                {isVisible && <Percent num="2" percent="85" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="1500" />}
                             </div>
                             <div className="d-none d-md-flex order-md-3 ">
-                                <Percent num="4" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox skillbox_5  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="1100" />
+                                {isVisible && <Percent num="4" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox skillbox_5  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="1100" />}
                             </div>
                             <div className="d-md-none d-flex">
-                                <Percent num="7" percent="70" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="600" />
-                                <Percent num="8" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox skillbox_5  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="700" />
+                                {isVisible && <Percent num="7" percent="70" skillimg="./img/main/about/jquery.png" cls="water_box water_box_3" cls_2="skillbox skillbox_3  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="600" />}
+                                {isVisible && <Percent num="8" percent="70" skillimg="./img/main/about/sass.png" cls="water_box water_box_5" cls_2="skillbox skillbox_5  align-items-center d-flex flex-column " cls_3="img-fluid Mh_0" aosdelay="700" />}
                             </div>
                         </div>
                         <div className="skillslist_3 d-flex align-items-center">
-                            <Percent num="5" percent="50" skillimg="" cls="water_box water_box_6" cls_2="skillbox skillbox_6 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1300" />
-                            <Percent num="6" percent="50" skillimg="" cls="water_box water_box_7" cls_2="skillbox skillbox_7 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1200" />
+                            {isVisible && <Percent num="5" percent="50" skillimg="" cls="water_box water_box_6" cls_2="skillbox skillbox_6 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1300" />}
+                            {isVisible && <Percent num="6" percent="50" skillimg="" cls="water_box water_box_7" cls_2="skillbox skillbox_7 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="1200" />}
                         </div>
                     </div>
                 </div>

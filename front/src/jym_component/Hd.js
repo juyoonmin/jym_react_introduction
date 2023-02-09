@@ -45,6 +45,7 @@ function Header(props) {
       window.addEventListener("scroll", handleScroll);
       window.addEventListener('resize', resizeHandler)
     }, 100);
+    console.log(targetRef.current.getBoundingClientRect(), window.scrollY)
     return () => {
       clearInterval(timer);
       window.removeEventListener("scroll", handleScroll);

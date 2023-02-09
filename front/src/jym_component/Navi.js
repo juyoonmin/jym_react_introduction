@@ -65,8 +65,6 @@ function Navi(props) {
   //   window.addEventListener('scroll', updateScroll);
   // });
 
-
-
   const naviDb = naviDBlink.naviDB;
 
 

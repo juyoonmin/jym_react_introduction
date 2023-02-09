@@ -84,3 +84,5 @@ node연동전 작업분은 MY_BRANCH에 위치
 # 2023-02-08
 * 네비,percent 테스트중
 * percent에 IntersectionObserver,useImperativeHandle 테스트중
+# 2023-02-09
+* percent 작업완료(스크롤이 해당위치에 가면 실행되게)
