@@ -14,8 +14,8 @@ node연동전 작업분은 MY_BRANCH에 위치
     "node-sass": "^4.14.0",
     "http-proxy-middleware": "^2.0.6",
     "swiper": "^8.4.5",
-    "lodash": "^4.17.21",
     "react-router-dom": "^6.8.1",
+    "react-animated-cursor": "^2.5.2",
 # 노드 설치 모듈
     "concurrently": "^7.6.0",
     "cors": "^2.8.5",
@@ -86,3 +86,6 @@ node연동전 작업분은 MY_BRANCH에 위치
 * percent에 IntersectionObserver,useImperativeHandle 테스트중
 # 2023-02-09
 * percent 작업완료(스크롤이 해당위치에 가면 실행되게)
+
+# 2023-02-10
+* Cursor 컴포넌트 생성, cursor 효과 추가

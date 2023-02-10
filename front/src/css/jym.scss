@@ -1,10 +1,52 @@
 #root {
   font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
   font-weight: 100;
-
+  cursor: none;
+  
   // letter-spacing: -0.083em;
   .App {
     height: 100vh;
+    .cursor {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #2c4286;
+      position: fixed;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background: linear-gradient(-90deg, #2c4286,#4867c1, #A3BAD2, #ebf5ff,#A3BAD2, #4867c1,#2c4286);
+      border-radius: 100% 0% 55% 45% / 55% 0% 100% 45% ;
+      box-shadow: inset 10px 20px 20px rgb(0 0 0 / 20%), 5px 5px 5px rgb(0 0 0 / 10%), 15px 10px 25px rgb(0 0 0 / 20%);
+      pointer-events: none;
+      transition: all 150ms ease;
+      transition-property: background-color, opacity, transform, mix-blend-mode;
+      z-index: 9999;
+      animation: gradient 9s ease infinite;
+      background-size: 400% 400%;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 20%;
+      }
+      50% {
+        background-position: 100% 30%;
+      }
+      100% {
+        background-position: 0% 20%;
+      }
+    }
+  
+    .cursor--hidden {
+      opacity: 0;
+    }
+  
+    .cursor--link-hovered {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 0.6;
+    }
+  
+    .cursor--clicked {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  
   }
 
   .section_1 {
@@ -16,7 +58,7 @@
   .section_2 {
     z-index: 10;
     transform: translateY(-291px);
-    
+
 
     [data-aos][data-aos][data-aos-duration="3000"],
     body[data-aos-duration="3000"] [data-aos] {
@@ -26,7 +68,7 @@
 
   .section_3 {
     z-index: 10;
-    transform: translateY(-650px);
+    transform: translateY(-800px);
 
     [data-aos][data-aos][data-aos-duration="3000"],
     body[data-aos-duration="3000"] [data-aos] {
@@ -141,7 +183,8 @@
     .waves_3 {
       .textblend {
         font-size: 60px;
-        h2{
+
+        h2 {
           padding: 0;
         }
       }
@@ -158,6 +201,9 @@
 }
 
 #hd {
+  &.fixed-top {
+    z-index: 30;
+  }
 
   // transition: all 1s ease 0s;
   &.scroll {
@@ -356,7 +402,7 @@
     }
 
     50% {
-      left: -2000px;
+      left: -1000px;
       top: 200px;
     }
 
@@ -1175,6 +1221,8 @@
       flex: 0 0 auto;
 
       &.selectDiv {
+        cursor: pointer;
+
         &::after {
           content: "";
           background-image: url(../../public/img/main/common/minichecked.svg);
@@ -1208,6 +1256,7 @@
 
         label {
           margin: 0;
+          cursor: pointer;
 
         }
 
@@ -1303,6 +1352,7 @@
     // background-color: #47474D;
     background-color: #FFFFFF;
     color: #101018;
+    cursor: pointer !important;
     // color: #FFFFFF;
 
     // &:hover {
@@ -1314,11 +1364,12 @@
 
   @media (max-width:768px) {
     #contactfrom {
-      .With_Me{
+      .With_Me {
         display: flex;
         justify-content: center;
         align-items: center;
       }
+
       .language ul {
         flex-wrap: wrap;
 

@@ -9,11 +9,12 @@ import About from './jym_component/About';
 import Work from './jym_component/Work';
 import Concact from './jym_component/Concact';
 import Waves from './jym_component/common/Waves';
+import Cursor from './jym_component/common/Cursor';
 
 
 
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 
 
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles />
+      <Cursor/>
       <Hd />
       <Intro />
       <Waves dur="5s" cls="waves waves_1" cls_2="d-none" />

@@ -1,6 +1,5 @@
 import Common from "./common/Common";
 import Percent from "./common/Percent";
-import Percent_test from "./common/Percent_test";
 import { useEffect, useRef, useState } from 'react';
 import React from "react";
 
