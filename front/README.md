@@ -16,6 +16,7 @@ node연동전 작업분은 MY_BRANCH에 위치
     "swiper": "^8.4.5",
     "react-router-dom": "^6.8.1",
     "react-animated-cursor": "^2.5.2",
+    "react-device-detect": "^2.2.3",
 # 노드 설치 모듈
     "concurrently": "^7.6.0",
     "cors": "^2.8.5",
@@ -89,3 +90,4 @@ node연동전 작업분은 MY_BRANCH에 위치
 
 # 2023-02-10
 * Cursor 컴포넌트 생성, cursor 효과 추가
+* Cursor 모바일에서 나오는 이슈 해결

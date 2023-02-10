@@ -1,22 +1,25 @@
 import React from "react";
 import classNames from 'classnames';
-
+import { BrowserView } from 'react-device-detect';
 
 
 
 const Cursor = () => {
-    
+
 
     const [position, setPosition] = React.useState({ x: 0, y: 0 });
     const [clicked, setClicked] = React.useState(false);
     const [linkHovered, setLinkHovered] = React.useState(false);
     const [hidden, setHidden] = React.useState(false);
 
+
     React.useEffect(() => {
         addEventListeners();
         handleLinkHoverEvents();
         return () => removeEventListeners();
     }, []);
+
+
 
     const addEventListeners = () => {
         document.addEventListener("mousemove", onMouseMove);
@@ -68,10 +71,13 @@ const Cursor = () => {
     });
 
     return (
-        <div
-            className={cursorClasses}
-            style={{ left: `${position.x}px`, top: `${position.y}px` }}
-        />
+        <BrowserView>
+            <div
+                className={cursorClasses}
+                style={{ left: `${position.x}px`, top: `${position.y}px` }}
+            />
+        </BrowserView>
+
     );
 };
 
