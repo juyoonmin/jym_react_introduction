@@ -1,28 +1,8 @@
-import { useRef, useEffect, useState } from 'react';
+import {  useEffect } from 'react';
+import Bubbles from './reusable/Bubbles';
 
 function Form(props) {
     
-    // const containerRef = useRef(null);
-    // const [isVisible, setIsVisible] = useState(false);
-
-    // const callbackFunction = (entries) => {
-    //     const [entry] = entries;
-    //     setIsVisible(entry.isIntersecting);
-    // };
-
-    // const options = {
-    //     root: null,
-    //     rootMargin: '0px',
-    //     threshold: 1
-    // };
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(callbackFunction, options);
-    //     if (containerRef.current) observer.observe(containerRef.current);
-
-    //     return () => {
-    //         if (containerRef.current) observer.unobserve(containerRef.current);
-    //     };
-    // }, [containerRef, options]);
 
 
 
@@ -57,7 +37,6 @@ function Form(props) {
 
 
 
-
     return (
         <section id="contactfrom" className="container">
             <div className="With_Me">
@@ -69,6 +48,8 @@ function Form(props) {
                 <div className="pb-5">
                     <h3 className="common_text">Contact</h3>
                 </div>
+                <Bubbles cls="bubbles bubbles11"/>
+                <Bubbles cls="bubbles bubbles12"/>
             </div>
             {/* <div className="pb-3 d-flex">
                 <p className="line lg">
@@ -97,7 +78,7 @@ function Form(props) {
                                     <li className="language_list">
                                         <label className="check">
                                             <input type="checkbox" name="language[]" value="js" />
-                                            <span className="language_name rounded-4 d-flex justify-content-center align-items-center">JAVASCRIPT</span>
+                                            <span className="language_name rounded-4 d-flex justify-content-center align-items-center">JS</span>
                                         </label>
                                     </li>
                                     <li className="language_list language_list_4">
@@ -115,33 +96,33 @@ function Form(props) {
                                 </ul>
                             </div>
                         </li>
-                        <li className=" pt-3">
+                        <li className="pt-3">
                             <div className="line ">
                                 <p className=" listm">
                                     <input type="text" name="company" className="" placeholder="Company Name" required />
                                 </p>
                             </div>
                         </li>
-                        <li className="py-3">
+                        <li className="py-md-3 pt10">
                             <ul className="d-flex justify-content-between emailul">
                                 <li className="line email_li">
                                     <p className="listm">
                                         <input type="text" name="email" className="" placeholder="Email Name" required />
                                     </p>
                                 </li>
-                                <li className="line email_li position-relative selectDiv d-flex align-items-center ">
+                                <li className="line email_li position-relative selectDiv d-flex align-items-center">
                                     <p className="selectBox text-black d-flex justify-content-between align-items-center listm"><label className="form-label" >Address Select</label><i className="selectCaret bi bi-caret-down-fill d-flex align-items-center"></i></p>
                                     <ul className="selectUl position-absolute">
                                         <li className="selectli ps-3 py-2">@naver.com</li>
                                         <li className="selectli ps-3 py-2">@daum.net</li>
                                         <li className="selectli ps-3 py-2">@hanmail.net</li>
                                         <li className="selectli ps-3 py-2">@gmail.com</li>
-                                        <li className="selectli directInput ps-3 py-2">직접 입력</li>
+                                        <li className="selectli directInput ps-3 py-2">직접입력</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li className=" pb-3">
+                        <li className=" pb-md-3 pt10">
                             <div className="line formindent">
                                 <p className="formindent m-3">
                                     <textarea name="contents" id="" cols="50" rows="10" placeholder="Please fill out the contents"></textarea>

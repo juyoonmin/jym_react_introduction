@@ -8,26 +8,17 @@ import Hd from "./jym_component/Hd"
 import About from './jym_component/About';
 import Work from './jym_component/Work';
 import Concact from './jym_component/Concact';
-import Waves from './jym_component/common/Waves';
-import Cursor from './jym_component/common/Cursor';
+import Waves from './jym_component/reusable/Waves';
+import Cursor from './jym_component/reusable/Cursor';
 
 
 
-import axios from 'axios';
 import React, { useEffect } from 'react';
 
 
 
 function App() {
-  const sendRequest = async () => {
-    const response = await axios.get('http://localhost:8080');
-    console.log(response);
-    console.log(response.data);
-  };
-
-  useEffect(() => {
-    sendRequest();
-  });
+  
   return (
     <div className="App">
       <GlobalStyles />

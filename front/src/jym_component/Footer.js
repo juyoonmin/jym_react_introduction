@@ -1,4 +1,4 @@
-import Sns from './common/Sns';
+import Sns from './reusable/Sns';
 
 
 function Footer(props) {

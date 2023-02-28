@@ -1,5 +1,6 @@
-import Common from "./common/Common";
-import Percent from "./common/Percent";
+import Common from "./reusable/Common";
+import Percent from "./reusable/Percent";
+import Bubbles from "./reusable/Bubbles";
 import { useEffect, useRef, useState } from 'react';
 import React from "react";
 
@@ -78,8 +79,10 @@ function About(props) {
 
     return (
         <div className="section_1  position-relative" data-anchor-id="2">
-            <Common title="WHO?" anchor="[data-anchor-id='2']" />
+            <Common title="WHO?" anchor="[data-anchor-id='2']" cls="bubbles bubbles0" cls2="bubbles bubbles0_0" />
             <section id="About" className="maincolor">
+                <Bubbles cls="bubbles bubbles1" />
+                <Bubbles cls="bubbles bubbles3" />
                 <div id="profile" className="container ">
                     <div className="pb-4">
                         <h3 className="common_text">Profile</h3>
@@ -102,11 +105,13 @@ function About(props) {
                         </div>
                     </div>
                 </div>
+                <Bubbles cls="bubbles bubbles2" />
+                <Bubbles cls="bubbles bubbles4" />
                 <div id="skills" className="Skills container">
                     <div className="">
                         <h3 ref={containerRef} className="common_text">Skills</h3>
                     </div>
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="skillsdiv d-flex flex-column align-items-center">
                         <div className="skillslist_1 d-flex align-items-center">
                             {isVisible && <Percent num="0" percent="50" skillimg="" cls="water_box water_box_1" cls_2="skillbox skillbox_1 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="700" />}
                             {isVisible && <Percent num="1" percent="50" skillimg="" cls="water_box water_box_2" cls_2="skillbox skillbox_2 col-6 align-items-center d-flex flex-column" cls_3="img-fluid Mh_0" aosdelay="900" />}

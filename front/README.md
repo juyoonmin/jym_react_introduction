@@ -91,3 +91,6 @@ node연동전 작업분은 MY_BRANCH에 위치
 # 2023-02-10
 * Cursor 컴포넌트 생성, cursor 효과 추가
 * Cursor 모바일에서 나오는 이슈 해결
+
+# 2023-02-28
+* bubbles 컴포넌트 추가

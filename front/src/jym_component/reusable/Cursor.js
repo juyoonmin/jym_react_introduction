@@ -67,7 +67,7 @@ const Cursor = () => {
     const cursorClasses = classNames("cursor", {
         "cursor--clicked": clicked,
         "cursor--hidden": hidden,
-        "cursor--link-hovered": linkHovered
+        "cursor--link-hovered": linkHovered,
     });
 
     return (
