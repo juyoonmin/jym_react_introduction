@@ -1,4 +1,3 @@
-import swiperDBlink from '../jym_json/swiper.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, } from 'swiper';
 import "swiper/css";
@@ -13,17 +12,6 @@ const Worksswiper = () => {
     const [worklist, setworklist] = useState(null); // 비동기통신 useState의 null인 이유
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-
-    // const bullet = document.querySelectorAll(".swiper-pagination-bullet");
-    // const proggres = document.querySelectorAll(".progress")
-    // const bar = {width:"73%"};
-    // useEffect(()=>{
-    //     bullet.addEventListener('click',function(){
-    //     proggres.animate({
-    //         bar
-    //     }, 2500);
-    // });
-    // },[])
 
     const fetchWork = async () => {
         try {
@@ -53,7 +41,6 @@ const Worksswiper = () => {
 
 
 
-    // var bullet =['1번','2번','3번','4번']
 
     return (
         <Swiper className='WorkSection container pt-4 '
@@ -61,13 +48,9 @@ const Worksswiper = () => {
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
+            initialSlide={1}
             pagination={{
                 clickable: true,
-                // renderBullet: function (index, className) {
-                //     return `<div class="${className} "><span>${bullet[index]}</span></div>`;
-                //     // <span>' + (bullet[index]) + '</span>
-                //     // ${workinfo.subimg[index]}
-                // }
             }}>
                 
             {
@@ -76,15 +59,9 @@ const Worksswiper = () => {
                         <SwiperSlide key={"work " + i}>
                             <div className="workslide d-flex Mfc">
                                 <div className='workimg col-12 col-md-6 d-flex flex-column'>
-                                    <div className='mainimg'>
-                                        <a href="#Intro"><img className='rounded-4 img-fluid' src={item.mainimg} alt="" /></a>
+                                    <div className='workmainimg'>
+                                        <a href="#Intro"><img className='rounded-4 img-fluid' src={item.mainimg} alt="메인포트폴리오이미지" /></a>
                                     </div>
-                                    {/* <div className='subimg d-none d-md-flex pt-5'>
-                                        <img className='rounded-4 img-fluid' src={item.subimg_0} alt="" />
-                                        <img className='rounded-4 mx-3 img-fluid' src={item.subimg_1} alt="" />
-                                        <img className='rounded-4 img-fluid' src={item.subimg_2} alt="" />
-                                        <img className='rounded-4 mx-3 img-fluid' src={item.subimg[3]} alt="" />
-                                    </div> */}
                                 </div>
                                 <div className='workinfo col-12 col-md-6 d-flex flex-column text-white ps-md-5'>
                                     <div className='workinfobox_1'>
@@ -115,9 +92,10 @@ const Worksswiper = () => {
                                         </div>
                                     </div>
                                     <div className='workinfobox_3 d-flex'>
-                                        <a href={item.gitsrc} target="_blank"><img className='git_img_m' src={item.gitimg} alt="" /></a>
-                                        <a className='px-4' href={item.notionsrc} target="_blank"><img className='notion_img_m' src={item.notionimg} alt="" /></a>
-                                        <a href={item.figmasrc} target="_blank"><img className='figma_img_m' src={item.figmaimg} alt="" /></a>
+                                        <a href={item.browsersrc} target="_blank"><img className='browser_img_m' src={item.browserimg} alt="브라우저아이콘" /></a>
+                                        <a className='px-4'href={item.gitsrc} target="_blank"><img className='git_img_m' src={item.gitimg} alt="깃아이콘" /></a>
+                                        <a href={item.notionsrc} target="_blank"><img className='notion_img_m' src={item.notionimg} alt="노션아이콘" /></a>
+                                        <a className='ps-4' href={item.figmasrc} target="_blank"><img className='figma_img_m' src={item.figmaimg} alt="피그마아이콘" /></a>
                                     </div>
                                 </div>
                             </div>

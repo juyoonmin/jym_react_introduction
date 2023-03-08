@@ -36,7 +36,7 @@ function Percent(props) {
             <div className={props.cls} data-aos="zoom-in" data-aos-delay={props.aosdelay} data-aos-anchor="[data-anchor-id='1']">
                 <div className="percent">
                     {/* <div className="percentNum count d-none"></div> */}
-                    <img className='' src={props.skillimg} />
+                    <img className='img-fluid' src={props.skillimg} />
                 </div>
                 <div ref={waterRef} className="water">
                     <svg viewBox="0 0 560 20" className=" water_wave water_wave_back">

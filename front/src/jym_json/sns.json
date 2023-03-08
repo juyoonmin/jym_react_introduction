@@ -1,0 +1,15 @@
+{
+    "snsDB": [
+        {
+            "snstitle": "github",
+            "snslink": "https://github.com/juyoonmin",
+            "snsimg": "./img/main/common/git.png"
+        },
+        {
+            "snstitle": "notion",
+            "snslink": "https://github.com/juyoonmin",
+            "snsimg": "./img/main/common/notion.png"
+        }
+        
+    ]
+}

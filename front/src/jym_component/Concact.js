@@ -6,7 +6,7 @@ import Footer from './Footer';
 function Concact(props) {
     return (
         <div className="section_3  position-relative">
-            <Common title="" cls="bubbles bubbles0" cls2="bubbles bubbles0_0" />
+            <Common title="" src="./img/main/common/common3.png" cls="bubbles bubbles0" cls2="bubbles bubbles0_0" />
             <div id="Concact" className="maincolor">
                 <Question />
                 <Form />

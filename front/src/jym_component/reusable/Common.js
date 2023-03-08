@@ -11,7 +11,7 @@ function Common(props) {
     })
     return (
         <section id="Common" className="container d-flex ps-md-5">
-            <img src="./img/main/common/aaa.png" alt="" />
+            <img src={props.src} alt="수심계이미지" />
             <div className='center-outer'>
                 <div className='center-inner'>
                     <div className='common_text'>

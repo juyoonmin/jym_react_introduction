@@ -17,6 +17,7 @@ node연동전 작업분은 MY_BRANCH에 위치
     "react-router-dom": "^6.8.1",
     "react-animated-cursor": "^2.5.2",
     "react-device-detect": "^2.2.3",
+    "react-hook-form": "^7.43.5"
 # 노드 설치 모듈
     "concurrently": "^7.6.0",
     "cors": "^2.8.5",
@@ -94,3 +95,9 @@ node연동전 작업분은 MY_BRANCH에 위치
 
 # 2023-02-28
 * bubbles 컴포넌트 추가
+
+# 2023-03-04
+* 인터뷰 질문 답변 sql문으로 추가, skills 이미지 추가, browser아이콘 추가 
+
+# 2023-03-08
+* form post 완료, 개인정보 수집 동의 추가
