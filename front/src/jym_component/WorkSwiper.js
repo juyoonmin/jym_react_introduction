@@ -60,7 +60,7 @@ const Worksswiper = () => {
                             <div className="workslide d-flex Mfc">
                                 <div className='workimg col-12 col-md-6 d-flex flex-column'>
                                     <div className='workmainimg'>
-                                        <a href="#Intro"><img className='rounded-4 img-fluid' src={item.mainimg} alt="메인포트폴리오이미지" /></a>
+                                        <a href={item.browsersrc} target="_blank" ><img className='rounded-4 img-fluid' src={item.mainimg} alt="메인포트폴리오이미지" /></a>
                                     </div>
                                 </div>
                                 <div className='workinfo col-12 col-md-6 d-flex flex-column text-white ps-md-5'>
@@ -69,7 +69,7 @@ const Worksswiper = () => {
                                         {/* <p className='subtitle infotext'>{item.subtitle}</p> */}
                                         <p className='explanation main_explanation infotext py-4'>{item.explanation}</p>
                                     </div>
-                                    <div className='workinfobox_2 pt-5 pb-3'>
+                                    <div className='workinfobox_2 pt-md-5 pb-3'>
                                         <div className='productionperiod d-flex'>
                                             <p className='explanation infotext productionperiod_text'>기간</p>
                                             <p className='infotext'>{item.productionperiod}</p>
@@ -80,6 +80,7 @@ const Worksswiper = () => {
                                                 <ProgressBar variant="html" now={item.useskills_0} key={1} label={item.skillname_0} />
                                                 <ProgressBar variant="css" now={item.useskills_1} key={2} label={item.skillname_1} />
                                                 <ProgressBar variant="javascript" now={item.useskills_2} key={3} label={item.skillname_2} />
+                                                <ProgressBar variant="php" now={item.useskills_3} key={4} label={item.skillname_3} />
                                             </ProgressBar>
                                         </div>
                                         <div className='participation d-flex align-items-center'>
@@ -92,10 +93,10 @@ const Worksswiper = () => {
                                         </div>
                                     </div>
                                     <div className='workinfobox_3 d-flex'>
-                                        <a href={item.browsersrc} target="_blank"><img className='browser_img_m' src={item.browserimg} alt="브라우저아이콘" /></a>
-                                        <a className='px-4'href={item.gitsrc} target="_blank"><img className='git_img_m' src={item.gitimg} alt="깃아이콘" /></a>
-                                        <a href={item.notionsrc} target="_blank"><img className='notion_img_m' src={item.notionimg} alt="노션아이콘" /></a>
-                                        <a className='ps-4' href={item.figmasrc} target="_blank"><img className='figma_img_m' src={item.figmaimg} alt="피그마아이콘" /></a>
+                                        <a className='browser_icon' href={item.browsersrc} target="_blank"><img className='browser_img_m' src={item.browserimg} alt="브라우저아이콘" /></a>
+                                        <a className='git_icon ps-4'href={item.gitsrc} target="_blank"><img className='git_img_m' src={item.gitimg} alt="깃아이콘" /></a>
+                                        <a className='notion_icon ps-4' href={item.notionsrc} target="_blank"><img className='notion_img_m' src={item.notionimg} alt="노션아이콘" /></a>
+                                        <a className='figma_icon ps-4' href={item.figmasrc} target="_blank"><img className='figma_img_m' src={item.figmaimg} alt="피그마아이콘" /></a>
                                     </div>
                                 </div>
                             </div>

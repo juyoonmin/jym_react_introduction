@@ -99,7 +99,14 @@ function About(props) {
                             <div className="d-flex">
                                 <div className="">
                                     <p className="py-3 fs-6 f700">이력 / 자격증</p>
-                                    <p className="f400">저쩌고<br />어쩌고<br />미주알</p>
+                                    <div className="f400 license">
+                                        <p>GTQ 1급</p>
+                                        <p>웹 디자인 기능사</p>
+                                        <p>Google Analytics</p>
+                                        <p>(주)길마로 프리랜서</p>
+                                        <p>(주)아이마케팅 프리랜서</p>
+                                        <p>NCS 프론트엔드 과정 수료</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
