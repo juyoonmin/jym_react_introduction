@@ -9,11 +9,11 @@ node연동전 작업분은 MY_BRANCH에 위치
     "styled-reset": "^4.4.4",
     "swiper": "^8.4.5"
     "react-scrollspy": "^3.4.3",
+    "react-bootstrap": "^2.7.0",
     "react-inlinesvg": "^3.0.1",
     "aos": "^2.3.4",
     "node-sass": "^4.14.0",
     "http-proxy-middleware": "^2.0.6",
-    "swiper": "^8.4.5",
     "react-router-dom": "^6.8.1",
     "react-animated-cursor": "^2.5.2",
     "react-device-detect": "^2.2.3",

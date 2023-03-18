@@ -55,6 +55,7 @@ const Worksswiper = () => {
                 
             {
                 worklist && worklist.map((item, i) => {
+                    const swipericon = `swipericon${i}`;
                     return (
                         <SwiperSlide key={"work " + i}>
                             <div className="workslide d-flex Mfc">
@@ -92,7 +93,7 @@ const Worksswiper = () => {
                                             </ProgressBar>
                                         </div>
                                     </div>
-                                    <div className='workinfobox_3 d-flex'>
+                                    <div className={`workinfobox_3 d-flex ${swipericon}`}>
                                         <a className='browser_icon' href={item.browsersrc} target="_blank"><img className='browser_img_m' src={item.browserimg} alt="브라우저아이콘" /></a>
                                         <a className='git_icon ps-4'href={item.gitsrc} target="_blank"><img className='git_img_m' src={item.gitimg} alt="깃아이콘" /></a>
                                         <a className='notion_icon ps-4' href={item.notionsrc} target="_blank"><img className='notion_img_m' src={item.notionimg} alt="노션아이콘" /></a>

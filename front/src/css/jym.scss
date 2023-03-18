@@ -614,7 +614,8 @@
 
   .DIVE {
     transform: translateY(310px);
-    #text{
+
+    #text {
       font-weight: bold;
     }
   }
@@ -781,9 +782,11 @@
 #About {
   position: relative;
   z-index: 10;
-  .license{
+
+  .license {
     line-height: 1.3;
   }
+
   .bubbles1 {
     left: 16%;
     top: 2%;
@@ -1083,7 +1086,7 @@
     .skillbox_7 {
       padding-left: 18px;
     }
-    
+
   }
 
   @media (min-width:768px) {
@@ -1093,11 +1096,12 @@
 
     .profile_text {
       padding-top: 10.75rem !important;
-      
+
     }
   }
+
   @media (max-width:991px) {
-    .profile_text{
+    .profile_text {
       padding-top: 2.813rem !important;
     }
   }
@@ -1194,6 +1198,9 @@
   .WorkSection {
     padding-bottom: 8.7rem;
 
+
+
+
     .progress-bar {
       background-color: transparent;
     }
@@ -1218,48 +1225,15 @@
         .bg-javascript {
           background-color: rgb(131 136 148);
         }
-        .bg-php{
-          background-color: #00000045 ;
+
+        .bg-php {
+          background-color: #00000045;
         }
       }
     }
 
     .swiper-pagination {
       width: 50%;
-    }
-    .swiper-slide:nth-child(4){
-      .workinfobox_3{
-        .git_icon{
-          display: none;
-        }
-        .notion_icon{
-          display: none;
-        }
-      }
-    }
-    .swiper-slide:nth-child(3){
-      .workinfobox_3{
-        .figma_icon{
-          display: none;
-        }
-        .git_icon{
-          display: none;
-        }
-      }
-    }
-    .swiper-slide:nth-child(5){
-      .workinfobox_3{
-        .browser_icon{
-          display: none;
-        }
-        .notion_icon{
-          display: none;
-        }
-        .git_icon{
-          padding-left: 0 !important;
-        }
-      }
-      
     }
 
     .workslide {
@@ -1305,12 +1279,52 @@
             padding-right: 33.5px;
           }
         }
-      }
-      .workinfobox_3{
-        .figma_img_m{
-          transform: translateY(1px);
+        .swipericon0{
+          .notion_icon{
+            display: none;
+          }
+        }
+        .swipericon1 {
+          .git_icon {
+            display: none;
+          }
+
+          .notion_icon {
+            display: none;
+          }
+        }
+
+        .swipericon2 {
+          .figma_icon {
+            display: none;
+          }
+
+          .git_icon {
+            display: none;
+          }
+        }
+
+        .swipericon3 {
+          .browser_icon {
+            display: none;
+          }
+
+          .notion_icon {
+            display: none;
+          }
+
+          .git_icon {
+            padding-left: 0 !important;
+          }
+        }
+
+        .workinfobox_3 {
+          .figma_img_m {
+            transform: translateY(1px);
+          }
         }
       }
+
       .workimg {
         .workmainimg {
           img {
@@ -1326,7 +1340,7 @@
 
   @media (min-width:768px) {
     .WorkSection {
-     
+
       .swiper-pagination {
         display: flex;
         transform: translate(-4px, -32px);
@@ -1347,16 +1361,20 @@
           opacity: 0.5;
         }
       }
-      .swiper-pagination-bullet:first-child{
+
+      .swiper-pagination-bullet:first-child {
         background-image: url(../../public/img/main/work/sub/jymwork_s.png);
       }
-      .swiper-pagination-bullet:nth-child(3){
+
+      .swiper-pagination-bullet:nth-child(2) {
         background-image: url(../../public/img/main/work/sub/doppler_s.png);
       }
-      .swiper-pagination-bullet:nth-child(2){
+
+      .swiper-pagination-bullet:nth-child(3) {
         background-image: url(../../public/img/main/work/sub/ikamper_s.png);
       }
-      .swiper-pagination-bullet:last-child{
+
+      .swiper-pagination-bullet:last-child {
         background-image: url(../../public/img/main/work/sub/yakgwa_s.png);
       }
     }
@@ -1367,14 +1385,17 @@
       .swiper-pagination {
         transform: translate(-4px, -120px);
       }
-      .swiper-pagination-bullet{
+
+      .swiper-pagination-bullet {
         margin-right: 0;
       }
+
       .swiper-slide-active {
         .progress {
           font-size: 11px;
         }
       }
+
       .workslide {
         .workinfo {}
 
@@ -1383,7 +1404,7 @@
           .workmainimg {
 
             img {
-              height: 344px;
+              height: auto;
               width: 100%;
             }
           }
@@ -1425,9 +1446,10 @@
 
       .workslide {
         .workinfo {
-          .main_explanation{
+          .main_explanation {
             height: auto;
           }
+
           .workinfobox_1 {
             .maintitle {
               padding-bottom: 0;
@@ -1459,7 +1481,7 @@
     .swiper {
 
       .swiper-pagination {
-        transform: translateY(-28.5rem);
+        transform: translateY(-29.5rem);
         width: 100%;
 
         .swiper-pagination-bullet {
@@ -1495,7 +1517,7 @@
 
 
       .workinfo {
-        padding-top: 60px;
+        padding-top: 80px;
         transform: translateY(-1rem);
 
         .workinfobox_2 {

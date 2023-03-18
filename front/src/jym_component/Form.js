@@ -49,7 +49,7 @@ function Form(props) {
             value.addEventListener("click", function (e) {
                 if (index === selectList.length - 1) {
                     document.querySelector('.selectDiv').innerHTML =
-                        `<input type="text" class="listm" id="directInputField" className="listm" placeholder="@email.com" />`
+                        `<input type="text" class="listm" id="directInputField" className="listm" placeholder="@email.com" required/>`
                 } else {
                     emailA.current = e.target.getAttribute("data-value");
                     document.querySelector(".selectBox").innerHTML = e.target.textContent;
@@ -118,7 +118,7 @@ function Form(props) {
             <div className="form">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input type="hidden" name="jym_form_id" {...register("jym_form_id")} />
-                    <input type="hidden" name="email_address" ref={emailA} {...register("email_address")} />
+                    <input type="hidden" name="email_address" ref={emailA} {...register("email_address")} required />
                     <ul className="flex-column">
                         <li>
                             <div className="language">
