@@ -70,7 +70,7 @@ function Navi(props) {
 
   return (
     <Scrollspy className={'d-md-flex mb-0 gnb_ul ' + props.cls + props.toggle}
-      items={[naviDb[0].naviLink, naviDb[1].naviLink, naviDb[2].naviLink]} currentClassName="is-current" highlightAllItemsInView={true}>
+      items={['About','Work','question','contactfrom']} currentClassName="active">
       {
         naviDb.map((item, index) => {
           return (

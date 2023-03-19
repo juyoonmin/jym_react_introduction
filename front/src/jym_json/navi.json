@@ -13,12 +13,12 @@
         },
         {
             "naviText": "Interview",
-            "naviLink": "#Concact",
+            "naviLink": "#question",
             "cls": "navi_name f400 text-decoration-none text-white"
         },
         {
             "naviText": "Contact",
-            "naviLink": "#fromstart",
+            "naviLink": "#contactfrom",
             "cls": "navi_name f400 text-decoration-none text-white"
         }
     ]
