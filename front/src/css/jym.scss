@@ -823,9 +823,12 @@
 
   #profile {
     padding-top: 10rem;
-  }
-
-  .profile_name {
+    .profile_box_img{
+      img{
+        border-radius: 13px;
+      }
+    }
+    .profile_name {
 
     border-bottom: 1px solid rgb(0 0 0 / 11%);
 
@@ -838,6 +841,9 @@
       font-weight: 500;
     }
   }
+  }
+
+  
 
   .Skills {
     padding-top: 8rem;
@@ -1359,19 +1365,19 @@
       }
 
       .swiper-pagination-bullet:first-child {
-        background-image: url(../../public/img/main/work/sub/jymwork_s.png);
+        background-image: url(../../public/img/main/work/sub/jymwork_s.webp);
       }
 
       .swiper-pagination-bullet:nth-child(2) {
-        background-image: url(../../public/img/main/work/sub/doppler_s.png);
+        background-image: url(../../public/img/main/work/sub/doppler_s.webp);
       }
 
       .swiper-pagination-bullet:nth-child(3) {
-        background-image: url(../../public/img/main/work/sub/ikamper_s.png);
+        background-image: url(../../public/img/main/work/sub/ikamper_s.webp);
       }
 
       .swiper-pagination-bullet:last-child {
-        background-image: url(../../public/img/main/work/sub/yakgwa_s.png);
+        background-image: url(../../public/img/main/work/sub/yakgwa_s.webp);
       }
     }
   }

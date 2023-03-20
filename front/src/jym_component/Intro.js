@@ -4,7 +4,7 @@ function Intro() {
   return (
     <section id='Intro' className='maincolor'>
       <div className='mainimg d-flex justify-content-center'>
-        <img className='img-fluid position-relative pt-5' src="./img/main/common/img_1.png" alt="메인이미지" />
+        <img className='img-fluid position-relative pt-5' src="./img/main/common/mainimg_1.webp" alt="메인이미지" />
         <div className='Intro_textbox position-absolute d-flex flex-column text-white text-center'>
           <p className='pb-4'>물속에<br /> 들어가야 <br /> 보인다</p>
           <a href="#About"><SVG src={dive} /></a>

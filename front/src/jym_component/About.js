@@ -79,7 +79,7 @@ function About(props) {
 
     return (
         <div className="section_1  position-relative" data-anchor-id="2">
-            <Common title="WHO?" src="./img/main/common/common.png" anchor="[data-anchor-id='2']" cls="bubbles bubbles0" cls2="bubbles bubbles0_0" />
+            <Common title="WHO?" src="./img/main/common/common.webp" anchor="[data-anchor-id='2']" cls="bubbles bubbles0" cls2="bubbles bubbles0_0" />
             <section id="About" className="maincolor">
                 <Bubbles cls="bubbles bubbles1" />
                 <Bubbles cls="bubbles bubbles3" />
@@ -89,7 +89,7 @@ function About(props) {
                     </div>
                     <div className="profile_box bg-white rounded-4 d-flex justify-content-between align-items-center Mfc">
                         <div className="profile_box_img p-3 p-md-4 order-md-2">
-                            <img className="img-fluid" src="/img/main/about/about_main_img.png" alt="메인사진" />
+                            <img className="img-fluid" src="/img/main/about/about_main_img.avif" alt="메인사진" />
                         </div>
                         <div className="profile_text col-12 col-md-6 order-md-1 p-3 p-md-4">
                             <div className="profile_name">
