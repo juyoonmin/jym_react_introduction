@@ -3,21 +3,21 @@ import Scrollspy from "react-scrollspy";
 import naviDBlink from '../jym_json/navi.json'
 
 function Navi(props) {
-  const [activenum, naviUpdate] = useState(-1);
-  //하나의 번호만 가지게 되는 랜더링변수
+  // const [activenum, naviUpdate] = useState(-1);
+  // //하나의 번호만 가지게 되는 랜더링변수
 
-  const naviActive = (e) => {
-    const navinodes = [...e.target.parentElement.parentElement.children];
-    //li들을 담아라
-    //index 번호 색출하기위함
-    console.log(navinodes.length);
-    //li총개수
+  // const naviActive = (e) => {
+  //   const navinodes = [...e.target.parentElement.parentElement.children];
+  //   //li들을 담아라
+  //   //index 번호 색출하기위함
+  //   console.log(navinodes.length);
+  //   //li총개수
 
-    const index = navinodes.indexOf(e.target.parentElement);// 타겟 li
-    console.log(index); // 그 li의 번호
+  //   const index = navinodes.indexOf(e.target.parentElement);// 타겟 li
+  //   console.log(index); // 그 li의 번호
 
-    naviUpdate(index);
-  }
+  //   naviUpdate(index);
+  // }
 
 //   useEffect(()=>{
 //       let section = document.querySelectorAll('section');
@@ -74,7 +74,7 @@ function Navi(props) {
       {
         naviDb.map((item, index) => {
           return (
-            <li className="list" id={'naivID' + index} key={'naivID' + index} ><a onClick={naviActive} href={item.naviLink} className={item.cls}>{item.naviText}</a></li>
+            <li className="list" id={'naivID' + index} key={'naivID' + index} ><a href={item.naviLink} className={item.cls}>{item.naviText}</a></li>
           )
         }
         )

@@ -679,7 +679,7 @@
   .Intro_textbox {
     transform: translateY(123px);
 
-    h3 {
+    p {
       font-weight: 250;
       font-size: 60px;
       line-height: 129.5%;
@@ -688,7 +688,7 @@
   }
 
   @media (max-width:600px) {
-    .Intro_textbox h3 {
+    .Intro_textbox p {
       font-size: 50px;
     }
   }
@@ -697,7 +697,7 @@
     .Intro_textbox {
       transform: translateY(80px);
 
-      h3 {
+      p {
         padding-bottom: 0 !important;
       }
     }
@@ -710,7 +710,7 @@
   }
 
   @media (max-width:400px) {
-    .Intro_textbox h3 {
+    .Intro_textbox p {
       font-size: 35px;
     }
 
@@ -1211,7 +1211,7 @@
         font-weight: 500;
         height: 18px;
         width: 72%;
-        animation: bar 1.5s linear;
+        animation: bar 1s linear;
         border-radius: 0;
 
         .bg-html {
@@ -1279,11 +1279,7 @@
             padding-right: 33.5px;
           }
         }
-        .swipericon0{
-          .notion_icon{
-            display: none;
-          }
-        }
+
         .swipericon1 {
           .git_icon {
             display: none;

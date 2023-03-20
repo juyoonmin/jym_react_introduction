@@ -70,7 +70,7 @@ function Header(props) {
           </a>
         </h1>
         <div className={naviOpen ? 'btn_toggle d-md-none position-absolute'  : 'btndiv position-absolute d-md-none'}>
-          <button className='navi_btn' id="allMenu" onClick={e => {
+          <button aria-label="메뉴버튼" className='navi_btn' id="allMenu" onClick={e => {
           setnaviOpen(!naviOpen)
         }} ></button>
         </div>

@@ -34,13 +34,9 @@ const Worksswiper = () => {
 
     }
 
-
     useEffect(() => {
         fetchWork(); //마우팅끝나고 바로 한번만 요청실행
     }, []);
-
-
-
 
     return (
         <Swiper className='WorkSection container pt-4 '
@@ -78,18 +74,18 @@ const Worksswiper = () => {
                                         <div className='useskills d-flex align-items-center'>
                                             <p className='explanation infotext useskills_text'>사용기술</p>
                                             <ProgressBar >
-                                                <ProgressBar variant="html" now={item.useskills_0} key={1} label={item.skillname_0} />
-                                                <ProgressBar variant="css" now={item.useskills_1} key={2} label={item.skillname_1} />
-                                                <ProgressBar variant="javascript" now={item.useskills_2} key={3} label={item.skillname_2} />
-                                                <ProgressBar variant="php" now={item.useskills_3} key={4} label={item.skillname_3} />
+                                                <ProgressBar variant="html" aria-label="html" now={item.useskills_0} key={1} label={item.skillname_0} />
+                                                <ProgressBar variant="css" aria-label="css" now={item.useskills_1} key={2} label={item.skillname_1} />
+                                                <ProgressBar variant="javascript" aria-label="javascript" now={item.useskills_2} key={3} label={item.skillname_2} />
+                                                <ProgressBar variant="php" aria-label="php" now={item.useskills_3} key={4} label={item.skillname_3} />
                                             </ProgressBar>
                                         </div>
                                         <div className='participation d-flex align-items-center'>
                                             <p className='explanation infotext participation_text'>참여도</p>
                                             <ProgressBar  >
-                                                <ProgressBar variant="html" now={item.participation_percent_0} key={1} label={"Plan"} />
-                                                <ProgressBar variant="css" now={item.participation_percent_1} key={2} label={"Design"} />
-                                                <ProgressBar variant="javascript" now={item.participation_percent_2} key={3} label={"Implement"} />
+                                                <ProgressBar variant="html" aria-label="plan" now={item.participation_percent_0} key={1} label={"Plan"} />
+                                                <ProgressBar variant="css" aria-label="Design" now={item.participation_percent_1} key={2} label={"Design"} />
+                                                <ProgressBar variant="javascript" aria-label="Implement" now={item.participation_percent_2} key={3} label={"Implement"} />
                                             </ProgressBar>
                                         </div>
                                     </div>
