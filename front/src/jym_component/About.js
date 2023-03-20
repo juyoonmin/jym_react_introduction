@@ -89,7 +89,7 @@ function About(props) {
                     </div>
                     <div className="profile_box bg-white rounded-4 d-flex justify-content-between align-items-center Mfc">
                         <div className="profile_box_img p-3 p-md-4 order-md-2">
-                            <img className="img-fluid" src="/img/main/about/about_main_img.avif" alt="메인사진" />
+                            <img className="img-fluid" src="/img/main/about/about_main_img.webp" alt="메인사진" />
                         </div>
                         <div className="profile_text col-12 col-md-6 order-md-1 p-3 p-md-4">
                             <div className="profile_name">

@@ -5,3 +5,4 @@
 
 ### [주윤민 자기소개페이지](http://goaxhfl0109.cafe24app.com/)
 ### [주윤민 자기소개페이지_노션](https://www.notion.so/_-a36062b32e104781b1ee4674b0589f4e?pvs=4)
+### [Node연동 git](https://github.com/juyoonmin/cafe24_node)
