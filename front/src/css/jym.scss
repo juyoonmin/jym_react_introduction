@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 #root {
   font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
   font-weight: 100;
   cursor: none !important;
+
 
   // letter-spacing: -0.083em;
   .App {
@@ -823,27 +826,29 @@
 
   #profile {
     padding-top: 10rem;
-    .profile_box_img{
-      img{
+
+    .profile_box_img {
+      img {
         border-radius: 13px;
       }
     }
+
     .profile_name {
 
-    border-bottom: 1px solid rgb(0 0 0 / 11%);
+      border-bottom: 1px solid rgb(0 0 0 / 11%);
 
-    h3 {
-      font-weight: 700;
-      font-size: 28px;
-    }
+      h3 {
+        font-weight: 700;
+        font-size: 28px;
+      }
 
-    p {
-      font-weight: 500;
+      p {
+        font-weight: 500;
+      }
     }
   }
-  }
 
-  
+
 
   .Skills {
     padding-top: 8rem;
@@ -1287,7 +1292,7 @@
         }
 
         .swipericon1 {
-          .git_icon {
+          .figma_icon {
             display: none;
           }
 
@@ -1297,6 +1302,16 @@
         }
 
         .swipericon2 {
+          .git_icon {
+            display: none;
+          }
+
+          .notion_icon {
+            display: none;
+          }
+        }
+
+        .swipericon3 {
           .figma_icon {
             display: none;
           }
@@ -1306,7 +1321,7 @@
           }
         }
 
-        .swipericon3 {
+        .swipericon4 {
           .browser_icon {
             display: none;
           }
@@ -1355,7 +1370,7 @@
         height: 70px;
         width: 81.91px;
         border-radius: 1rem;
-        margin-right: 20px;
+        margin-right: 14px;
 
         &.swiper-pagination-bullet-active {}
 
@@ -1369,10 +1384,14 @@
       }
 
       .swiper-pagination-bullet:nth-child(2) {
-        background-image: url(../../public/img/main/work/sub/doppler_s.webp);
+        background-image: url(../../public/img/main/work/sub/fortune_s.webp);
       }
 
       .swiper-pagination-bullet:nth-child(3) {
+        background-image: url(../../public/img/main/work/sub/doppler_s.webp);
+      }
+
+      .swiper-pagination-bullet:nth-child(4) {
         background-image: url(../../public/img/main/work/sub/ikamper_s.webp);
       }
 
@@ -1390,6 +1409,8 @@
 
       .swiper-pagination-bullet {
         margin-right: 0;
+        transform: translateY(-12px);
+        height: 58px;
       }
 
       .swiper-slide-active {
