@@ -1322,7 +1322,7 @@
         }
 
         .swipericon4 {
-          .browser_icon {
+          .figma_icon {
             display: none;
           }
 
@@ -1331,7 +1331,7 @@
           }
 
           .git_icon {
-            padding-left: 0 !important;
+            // padding-left: 0 !important;
           }
         }
 
@@ -1384,7 +1384,7 @@
       }
 
       .swiper-pagination-bullet:nth-child(2) {
-        background-image: url(../../public/img/main/work/sub/fortune_s.webp);
+        background-image: url(../../public/img/main/work/sub/AirMug_s.webp);
       }
 
       .swiper-pagination-bullet:nth-child(3) {
@@ -1396,7 +1396,7 @@
       }
 
       .swiper-pagination-bullet:last-child {
-        background-image: url(../../public/img/main/work/sub/yakgwa_s.webp);
+        background-image: url(../../public/img/main/work/sub/fortune_s.webp);
       }
     }
   }
